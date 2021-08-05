@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 
 * {
   margin: 0;
@@ -10,4 +11,7 @@
 }
 .tab {
   clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
+}
+.hashnode-blog-demo * {
+  font-family: "Inter", sans-serif;
 }
