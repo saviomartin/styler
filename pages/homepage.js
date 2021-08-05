@@ -1,9 +1,8 @@
-import { letterSpacing } from "@material-ui/system";
 import React, { useEffect } from "react";
 
 const homepage = () => {
   useEffect(() => {
-    letterSpacing anchors = document
+    let anchors = document
       .querySelector(".hashnode-blog-demo")
       .querySelectorAll("a");
     for (var i = 0; i < anchors.length; i++) {
