@@ -5,3 +5,4 @@ export { default as AppHeader } from "./core/AppHeader";
 
 // util components
 export { default as Btn } from "./utils/Btn";
+export { default as FancyBtn } from "./utils/FancyBtn";

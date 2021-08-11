@@ -39,17 +39,19 @@ const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
     <div
       className={`${
         showLeftBar ? "w-[64%]" : "w-full"
-      } h-full bg-[#EDF0F2] playground relative flex items-center justify-center`}
+      } h-full bg-[#EDF0F2] relative`}
     >
       <AppHeader />
-      <div className="scale-[.95] lg:scale-[.85]">
-        <iframe
-          src="/demo/home"
-          id="iframe"
-          frameborder="0"
-          className="relative select-none shadow-xl overflow-scroll"
-          style={{ height: "672.95px", width: "1366px" }}
-        ></iframe>
+      <div className="playground h-full w-full relative flex items-center justify-center">
+        <div className="scale-[.95] lg:scale-[.85] mt-[-20px]">
+          <iframe
+            src="/demo/home"
+            id="iframe"
+            frameborder="0"
+            className="relative select-none shadow-xl overflow-scroll"
+            style={{ height: "672.95px", width: "1366px" }}
+          ></iframe>
+        </div>
       </div>
     </div>
   );
