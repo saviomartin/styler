@@ -15,3 +15,15 @@
 .hashnode-blog-demo * {
   font-family: "Inter", sans-serif;
 }
+.transition-500 {
+  transition: 0.5s;
+}
+.gradient {
+  background: linear-gradient(to right, #fdb99b, #cf8bf3, #a770ef);
+}
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}

@@ -574,18 +574,6 @@ const homepage = () => {
                               src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI4NDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                             />
                           </div>
-                          <noscript>
-                            &lt;img alt="Integrate your React App with Smart
-                            Contracts"
-                            srcSet="/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1626706306258%2FknGEJ2Gki.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;amp;w=1920&amp;amp;q=75
-                            1x,
-                            /_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1626706306258%2FknGEJ2Gki.jpeg%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&amp;amp;w=3840&amp;amp;q=75
-                            2x"
-                            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1626706306258/knGEJ2Gki.jpeg?w=1600&amp;amp;h=840&amp;amp;fit=crop&amp;amp;crop=entropy&amp;amp;auto=compress,format&amp;amp;format=webp"
-                            decoding="async"
-                            style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%;filter:blur(20px);background-size:cover;background-image:url(&amp;quot;https://cdn.hashnode.com/res/hashnode/image/upload/v1626706306258/knGEJ2Gki.jpeg?w=1600&amp;amp;h=840&amp;amp;fit=crop&amp;amp;crop=entropy&amp;amp;auto=compress,format&amp;amp;format=webp&amp;amp;fm=blurhash&amp;quot;)"
-                            class="post-cover"/&gt;
-                          </noscript>
                           <img
                             alt="Integrate your React App with Smart Contracts"
                             src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"

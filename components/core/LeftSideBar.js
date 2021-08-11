@@ -2,15 +2,24 @@ import React from "react";
 import { FiChevronLeft } from "react-icons/fi";
 import { Btn } from "..";
 
-const LeftSideBar = () => {
+const LeftSideBar = ({ showLeftBar, setShowLeftBar }) => {
   return (
-    <div className="w-[36%] h-full bg-[#fff] shadow relative border-r border-[#ddd]">
+    <div
+      className={` ${
+        showLeftBar ? "w-[36%]" : "w-0"
+      } h-full bg-[#282F38] shadow relative border-r border-[#888]`}
+    >
       Left
-      <div className="absolute top-0 right-[-21px] h-full flex items-center justify-center">
-        <Btn className="tab">
-          <button className="bg-[#ddd] w-[21px] h-[95px] tab relative p-[1px]">
-            <div className="bg-[#fff] tab h-full w-full flex items-center justify-center">
-              <FiChevronLeft className="text-[#222]" />
+      <div className="absolute top-0 right-[-21.5px] h-full flex items-center justify-center z-10">
+        <Btn className="tab" onClick={() => setShowLeftBar(!showLeftBar)}>
+          <button className="bg-[#282F38] w-[21px] h-[95px] tab relative p-[1px]">
+            <div className="bg-[#282F38] tab h-full w-full flex items-center justify-center">
+              <FiChevronLeft
+                className="text-[#fafafa] transition-500"
+                style={{
+                  transform: `rotate(${showLeftBar ? "0" : "180"}deg)`,
+                }}
+              />
             </div>
           </button>
         </Btn>
