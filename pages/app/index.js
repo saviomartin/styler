@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { LeftSideBar, PlayGround } from "../components";
+import { LeftSideBar, PlayGround } from "../../components";
 
 const app = () => {
   const [showLeftBar, setShowLeftBar] = useState(true);

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { AppHeader } from "..";
+import { AppHeader, AppFooter } from "..";
 
 const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
   // resize cover image to fit the view
@@ -53,6 +53,7 @@ const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
           ></iframe>
         </div>
       </div>
+      <AppFooter />
     </div>
   );
 };
