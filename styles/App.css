@@ -26,3 +26,9 @@
   backdrop-filter: blur(4px);
   border: 1px solid #ffffff2e;
 }
+
+/* Toggle B */
+#toggleB:checked ~ .dot {
+  transform: translateX(100%);
+  background: linear-gradient(to bottom, #fdb99b, #cf8bf3, #a770ef);
+}

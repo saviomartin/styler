@@ -33,6 +33,18 @@ const AdvancedSettings = ({ dimensions, setDimensions }) => {
     }
   }, [selectedMedia]);
 
+  useEffect(() => {
+    let iframe = window.frames[0].document.querySelector(".hashnode-blog-demo");
+
+    if (iframe) {
+      if (darkMode) {
+        iframe.classList.add("dark");
+      } else {
+        iframe.classList.remove("dark");
+      }
+    }
+  }, [darkMode]);
+
   return (
     <div className="absolute top-0 left-0 z-10 bg-[#fff] border border-[#ddd] p-2 rounded-br-md shadow flex">
       <div className="relative w-[120px]">
@@ -73,15 +85,21 @@ const AdvancedSettings = ({ dimensions, setDimensions }) => {
           </div>
         </Listbox>
       </div>
-      <div className="relative flex">
-        <div className="h-full bg-[#ddd] w-[1px] mx-2"></div>
+      <div className="relative flex h-full items-center justify-center border-l border-[#ddd] pl-2  pb-3">
         <div className="relative">
           <h3 className="text-xs text-[#444]">Dark Mode</h3>
-          <Switch
-            checked={darkMode}
-            onChange={() => setDarkMode(!darkMode)}
-            color="primary"
-          />
+          <label for="toggleB" class="flex items-center cursor-pointer mt-1">
+            <div class="relative">
+              <input
+                type="checkbox"
+                id="toggleB"
+                class="sr-only"
+                onChange={() => setDarkMode(!darkMode)}
+              />
+              <div class="block bg-[#eee] border border-[#ddd] w-10 h-6 rounded-full"></div>
+              <div class="dot absolute left-1 top-1 bg-[#aaa] w-4 h-4 rounded-full transition"></div>
+            </div>
+          </label>
         </div>
       </div>
     </div>
