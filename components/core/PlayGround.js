@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { AppHeader, AppFooter } from "..";
+import { AppHeader, AppFooter, AdvancedSettings } from "..";
 
 const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
   // resize cover image to fit the view
@@ -43,7 +43,8 @@ const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
     >
       <AppHeader />
       <div className="playground h-full w-full relative flex items-center justify-center">
-        <div className="scale-[.95] lg:scale-[.85] mt-[-20px]">
+        <AdvancedSettings />
+        <div className="scale-[.95] lg:scale-[.85] mt-[-5%]">
           <iframe
             src="/demo/home"
             id="iframe"

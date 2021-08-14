@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { LeftSideBar, PlayGround } from "../../components";
 
-const app = () => {
+const app = (props) => {
   const [showLeftBar, setShowLeftBar] = useState(true);
 
   const appProps = {
@@ -11,8 +11,8 @@ const app = () => {
 
   return (
     <div className="w-full h-screen overflow-hidden flex bg-[#F7F7FC]">
-      <LeftSideBar {...appProps} />
-      <PlayGround {...appProps} />
+      <LeftSideBar {...appProps} {...props} />
+      <PlayGround {...appProps} {...props} />
     </div>
   );
 };

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const homepage = () => {
+const homepage = ({ data }) => {
   useEffect(() => {
     let anchors = document
       .querySelector(".hashnode-blog-demo")
@@ -10,6 +10,29 @@ const homepage = () => {
         return false;
       };
     }
+  });
+
+  useEffect(() => {
+    document.onclick = (e) => {
+      const element0 = e.path[0].className;
+      const element1 = e.path[1].className;
+
+      const element = element0
+        ? element0.split(" ")[0]
+        : element1.split(" ")[0];
+
+      const chosenItem = data.filter((item) => item.name === element);
+    };
+
+    // data.forEach((item) => {
+    //   const element = document.querySelector(`.${item.name}`);
+
+    //   if (element) {
+    //     element.onclick = () => {
+    //       console.log(element.className);
+    //     };
+    //   }
+    // });
   });
   return (
     <div className="hashnode-blog-demo">
@@ -26,14 +49,6 @@ const homepage = () => {
             "\n            #nprogress {\n                pointer-events: none\n            }\n\n            #nprogress .bar {\n                background: #29d;\n                position: fixed;\n                z-index: 1031;\n                top: 0;\n                left: 0;\n                width: 100%;\n                height: 2px\n            }\n\n            #nprogress .peg {\n                display: block;\n                position: absolute;\n                right: 0;\n                width: 100px;\n                height: 100%;\n                box-shadow: 0 0 10px #29d,0 0 5px #29d;\n                opacity: 1;\n                -webkit-transform: rotate(3deg) translate(0,-4px);\n                -ms-transform: rotate(3deg) translate(0,-4px);\n                transform: rotate(3deg) translate(0,-4px)\n            }\n\n            #nprogress .spinner {\n                display: block;\n                position: fixed;\n                z-index: 1031;\n                top: 15px;\n                right: 15px\n            }\n\n            #nprogress .spinner-icon {\n                width: 18px;\n                height: 18px;\n                box-sizing: border-box;\n                border: solid 2px transparent;\n                border-top-color: #29d;\n                border-left-color: #29d;\n                border-radius: 50%;\n                -webkit-animation: nprogress-spinner .4s linear infinite;\n                animation: nprogress-spinner .4s linear infinite\n            }\n\n            .nprogress-custom-parent {\n                overflow: hidden;\n                position: relative\n            }\n\n            .nprogress-custom-parent #nprogress .bar,.nprogress-custom-parent #nprogress .spinner {\n                position: absolute\n            }\n\n            @-webkit-keyframes nprogress-spinner {\n                0% {\n                    -webkit-transform: rotate(0)\n                }\n\n                100% {\n                    -webkit-transform: rotate(360deg)\n                }\n            }\n\n            @keyframes nprogress-spinner {\n                0% {\n                    transform: rotate(0)\n                }\n\n                100% {\n                    transform: rotate(360deg)\n                }\n            }\n        ",
         }}
       />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-      <meta charSet="UTF-8" />
-      <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1, shrink-to-fit=no"
-      />
-      <title>Savio 's Blog</title>
-
       <style
         data-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=block"
         dangerouslySetInnerHTML={{
@@ -153,7 +168,7 @@ const homepage = () => {
                     />
                     <h1 className="blog-title css-vhqvd7">
                       <a href="/" aria-label="Nazeeh's Blog">
-                        Nazeeh 's Blog
+                        Savio's Blog
                       </a>
                     </h1>
                   </div>
