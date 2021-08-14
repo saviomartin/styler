@@ -1,7 +1,12 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { AppHeader, AppFooter, AdvancedSettings } from "..";
 
 const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
+  const [dimensions, setDimensions] = useState({
+    width: "1366px",
+    height: "672.95px",
+  });
+
   // resize cover image to fit the view
   const resizeCoverImage = () => {
     const iframe = document.querySelector("#iframe");
@@ -35,6 +40,11 @@ const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
     window.addEventListener("resize", resizeCoverImage);
   });
 
+  const props = {
+    dimensions,
+    setDimensions,
+  };
+
   return (
     <div
       className={`${
@@ -43,14 +53,14 @@ const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
     >
       <AppHeader />
       <div className="playground h-full w-full relative flex items-center justify-center">
-        <AdvancedSettings />
+        <AdvancedSettings {...props} />
         <div className="scale-[.95] lg:scale-[.85] mt-[-5%]">
           <iframe
             src="/demo/home"
             id="iframe"
             frameborder="0"
             className="relative select-none shadow-xl overflow-scroll"
-            style={{ height: "672.95px", width: "1366px" }}
+            style={{ height: dimensions.height, width: dimensions.width }}
           ></iframe>
         </div>
       </div>

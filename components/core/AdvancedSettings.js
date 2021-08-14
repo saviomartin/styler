@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Listbox } from "@headlessui/react";
 import Btn from "../utils/Btn";
 import { BsChevronExpand, BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
@@ -10,9 +10,28 @@ const media = [
   { id: 3, name: "Laptop", icon: <BsLaptop className="text-xl mr-1" /> },
 ];
 
-const AdvancedSettings = () => {
+const AdvancedSettings = ({ dimensions, setDimensions }) => {
   const [selectedMedia, setSelectedMedia] = useState(media[2]);
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (selectedMedia.id === 1) {
+      setDimensions({
+        width: "375px",
+        height: "667px",
+      });
+    } else if (selectedMedia.id === 2) {
+      setDimensions({
+        width: "1024px",
+        height: "768px",
+      });
+    } else {
+      setDimensions({
+        width: "1366px",
+        height: "672.95px",
+      });
+    }
+  }, [selectedMedia]);
 
   return (
     <div className="absolute top-0 left-0 z-10 bg-[#fff] border border-[#ddd] p-2 rounded-br-md shadow flex">
