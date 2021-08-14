@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Listbox } from "@headlessui/react";
 import Btn from "../utils/Btn";
 import { BsChevronExpand, BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
+import Switch from "@material-ui/core/Switch";
 
 const media = [
   { id: 1, name: "Phone", icon: <BsPhone className="text-xl mr-1" /> },
@@ -11,6 +12,7 @@ const media = [
 
 const AdvancedSettings = () => {
   const [selectedMedia, setSelectedMedia] = useState(media[2]);
+  const [darkMode, setDarkMode] = useState(false);
 
   return (
     <div className="absolute top-0 left-0 z-10 bg-[#fff] border border-[#ddd] p-2 rounded-br-md shadow flex">
@@ -51,6 +53,17 @@ const AdvancedSettings = () => {
             </Listbox.Options>
           </div>
         </Listbox>
+      </div>
+      <div className="relative flex">
+        <div className="h-full bg-[#ddd] w-[1px] mx-2"></div>
+        <div className="relative">
+          <h3 className="text-xs text-[#444]">Dark Mode</h3>
+          <Switch
+            checked={darkMode}
+            onChange={() => setDarkMode(!darkMode)}
+            color="primary"
+          />
+        </div>
       </div>
     </div>
   );
