@@ -13,26 +13,14 @@ const homepage = ({ data }) => {
   });
 
   useEffect(() => {
-    document.onclick = (e) => {
-      const element0 = e.path[0].className;
-      const element1 = e.path[1].className;
+    data.forEach((item) => {
+      const element = document.querySelector(`.${item.name}`);
 
-      const element = element0
-        ? element0.split(" ")[0]
-        : element1.split(" ")[0];
-
-      const chosenItem = data.filter((item) => item.name === element);
-    };
-
-    // data.forEach((item) => {
-    //   const element = document.querySelector(`.${item.name}`);
-
-    //   if (element) {
-    //     element.onclick = () => {
-    //       console.log(element.className);
-    //     };
-    //   }
-    // });
+      if (element) {
+        element.classList.add("component");
+        element.setAttribute("tooltip", item.name);
+      }
+    });
   });
   return (
     <div className="hashnode-blog-demo">

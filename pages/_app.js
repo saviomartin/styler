@@ -4,8 +4,6 @@ import "../styles/App.css";
 
 function MyApp({ Component, pageProps }) {
   const [data, setData] = useState([
-    { name: "asterisk", code: "" },
-    { name: "body", code: "" },
     { name: "blog-series-collapsible", code: "" },
     { name: "blog-similar-article-cover", code: "" },
     { name: "blog-more-articles-wrapper", code: "" },
@@ -93,10 +91,13 @@ function MyApp({ Component, pageProps }) {
     { name: "blog-subscription-form-subscribed-message", code: "" },
     { name: "blog-page-title", code: "" },
   ]);
+  const [chosenElement, setChosenElement] = useState("");
 
   const props = {
     data,
     setData,
+    chosenElement,
+    setChosenElement,
   };
 
   return <Component {...pageProps} {...props} />;

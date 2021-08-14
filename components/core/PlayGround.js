@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AppHeader, AppFooter, AdvancedSettings } from "..";
 
-const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
+const PlayGround = ({ showLeftBar, chosenElement, setChosenElement, data }) => {
   const [dimensions, setDimensions] = useState({
     width: "1366px",
     height: "672.95px",
@@ -44,6 +44,36 @@ const PlayGround = ({ showLeftBar, setShowLeftBar }) => {
     dimensions,
     setDimensions,
   };
+
+  useEffect(() => {
+    let iframe = window.frames[0].document;
+
+    iframe.onclick = (e) => {
+      let element;
+
+      if (e.path[0].className.length > 0) {
+        element = e.path[0].className.replace(/ .*/, "");
+      } else if (e.path[1].className.length > 0) {
+        element = e.path[1].className.replace(/ .*/, "");
+      } else if (e.path[2].className.length > 0) {
+        element = e.path[2].className.replace(/ .*/, "");
+      } else if (e.path[3].className.length > 0) {
+        element = e.path[3].className.replace(/ .*/, "");
+      } else if (e.path[4].className.length > 0) {
+        element = e.path[4].className.replace(/ .*/, "");
+      }
+
+      if (element !== undefined && element.length > 1) {
+        if (data.filter((item) => item.name === element).length > 0) {
+          if (data.filter((item) => item.name === element)[0].name) {
+            setChosenElement(
+              data.filter((item) => item.name === element)[0].name
+            );
+          }
+        }
+      }
+    };
+  }, []);
 
   return (
     <div
