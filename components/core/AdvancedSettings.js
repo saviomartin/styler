@@ -16,10 +16,10 @@ const AdvancedSettings = () => {
 
   return (
     <div className="absolute top-0 left-0 z-10 bg-[#fff] border border-[#ddd] p-2 rounded-br-md shadow flex">
-      <div className="relative">
+      <div className="relative w-[120px]">
         <h3 className="text-xs text-[#444]">Media</h3>
         <Listbox value={selectedMedia} onChange={setSelectedMedia}>
-          <div className="border border-[#ddd] rounded-md mt-1">
+          <div className="border border-[#ddd] rounded-md mt-1 absolute bg-white">
             <Listbox.Button>
               <Btn>
                 <div className="py-1 px-2 rounded-md text-[#444] flex items-center justify-center">

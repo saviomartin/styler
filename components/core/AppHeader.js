@@ -36,7 +36,7 @@ const AppHeader = () => {
             </div>
           </Btn>
         </MenuButton>
-        <MenuList className="bg-white p-2 mt-1 rounded-md shadow z-[20] relative">
+        <MenuList className="bg-white p-2 mt-1 rounded-md shadow z-[20] relative border border-[#ddd]">
           <MenuItem>
             <Link href={isHomeURL ? "/app/article/" : ""}>
               <Btn className="!rounded-md">
