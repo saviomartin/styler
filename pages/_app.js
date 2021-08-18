@@ -91,6 +91,9 @@ function MyApp({ Component, pageProps }) {
     { name: "blog-subscription-form-subscribed-message", code: "" },
     { name: "blog-page-title", code: "" },
   ]);
+  const [basicStyles, setBasicStyles] = useState(
+    `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap')\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100%;\n  font-family: "Inter", sans-serif;\n}`
+  );
   const [chosenElement, setChosenElement] = useState("");
 
   const props = {
@@ -98,6 +101,8 @@ function MyApp({ Component, pageProps }) {
     setData,
     chosenElement,
     setChosenElement,
+    basicStyles,
+    setBasicStyles,
   };
 
   return <Component {...pageProps} {...props} />;

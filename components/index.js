@@ -1,3 +1,5 @@
+import dynamic from "next/dynamic";
+
 // core components
 export { default as LeftSideBar } from "./core/LeftSideBar";
 export { default as PlayGround } from "./core/PlayGround";
@@ -10,3 +12,5 @@ export { default as EditingLeftSide } from "./core/EditingLeftSide";
 // util components
 export { default as Btn } from "./utils/Btn";
 export { default as FancyBtn } from "./utils/FancyBtn";
+
+export const CodeBlock = dynamic(import("./utils/CodeBlock"), { ssr: false });
