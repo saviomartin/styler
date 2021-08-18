@@ -79,7 +79,7 @@ const PlayGround = ({ showLeftBar, chosenElement, setChosenElement, data }) => {
     <div
       className={`${
         showLeftBar ? "w-[64%]" : "w-full"
-      } h-full bg-[#EDF0F2] relative`}
+      } h-full bg-[#EDF0F2] relative overflow-hidden`}
     >
       <AppHeader />
       <div className="playground h-full w-full relative flex items-center justify-center">

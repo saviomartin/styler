@@ -37,3 +37,11 @@
   border: 1px solid #4286f4;
   z-index: 10;
 }
+
+.continuous-1 {
+  background: linear-gradient(currentColor 0 0) var(--d, 201%) 100% /200% 1px no-repeat;
+  transition: 0.5s;
+}
+.continuous-1:hover {
+  --d: -101%;
+}

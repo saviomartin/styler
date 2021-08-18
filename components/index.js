@@ -4,6 +4,8 @@ export { default as PlayGround } from "./core/PlayGround";
 export { default as AppHeader } from "./core/AppHeader";
 export { default as AppFooter } from "./core/AppFooter";
 export { default as AdvancedSettings } from "./core/AdvancedSettings";
+export { default as DefaultLeftSide } from "./core/DefaultLeftSide";
+export { default as EditingLeftSide } from "./core/EditingLeftSide";
 
 // util components
 export { default as Btn } from "./utils/Btn";

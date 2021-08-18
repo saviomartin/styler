@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { FiChevronLeft } from "react-icons/fi";
-import { Btn } from "..";
+import { Btn, DefaultLeftSide, EditingLeftSide } from "..";
 
-const LeftSideBar = ({
-  showLeftBar,
-  setShowLeftBar,
-  data,
-  setData,
-  chosenElement,
-  setChosenElement,
-}) => {
+const LeftSideBar = (props) => {
+  let { showLeftBar, setShowLeftBar, chosenElement } = props;
   return (
     <div
       className={` ${
         showLeftBar ? "w-[36%]" : "w-0"
       } h-full bg-[#282F38] shadow relative border-r border-[#888] text-white`}
     >
-      <h1>{chosenElement}</h1>
+      {chosenElement ? (
+        <EditingLeftSide {...props} />
+      ) : (
+        <DefaultLeftSide {...props} />
+      )}
       <div className="absolute top-0 right-[-21.5px] h-full flex items-center justify-center z-10">
         <Btn className="tab" onClick={() => setShowLeftBar(!showLeftBar)}>
           <button className="bg-[#282F38] w-[21px] h-[95px] tab relative p-[1px]">
