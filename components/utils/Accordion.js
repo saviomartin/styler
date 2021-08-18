@@ -8,7 +8,7 @@ import AccordionDetails from "@material-ui/core/AccordionDetails";
 // icons
 import { FiChevronDown } from "react-icons/fi";
 
-const Wrapper = ({ children, name, expanded = false, className = "" }) => {
+const Wrapper = ({ children, name, className = "", expanded, onChange }) => {
   return (
     <div
       className={`w-11/12 gradient p-[1px] rounded-[4px] my-[5px] ${className}`}
@@ -18,7 +18,8 @@ const Wrapper = ({ children, name, expanded = false, className = "" }) => {
           style={{
             background: "inherit",
           }}
-          defaultExpanded={expanded}
+          expanded={expanded}
+          onChange={onChange}
         >
           <AccordionSummary
             expandIcon={<FiChevronDown className="text-[#fafafa]" />}
