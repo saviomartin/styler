@@ -101,7 +101,6 @@ const EditingLeftSide = ({
       >
         <p className="text-sm text-[#aaa]">
           Add the default styles to appear first.{" "}
-          {JSON.stringify(data.filter((item) => item.name === chosenElement))}
         </p>
         <div className="border border-[#555] rounded-md mt-2">
           <CodeBlock
