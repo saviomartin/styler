@@ -75,6 +75,14 @@ const PlayGround = ({ showLeftBar, CSSCode, setChosenElement, data }) => {
     };
   }, []);
 
+  useEffect(() => {
+    let iframe = window.frames[0].document;
+
+    let style = document.createElement("style");
+    style.innerHTML = CSSCode;
+    iframe.body.appendChild(style);
+  }, [CSSCode]);
+
   return (
     <div
       className={`${
