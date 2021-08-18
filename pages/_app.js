@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "tailwindcss/tailwind.css";
 import "../styles/App.css";
 import mockData from "../components/data";
+import { generateCSS } from "../components/helper";
 
 function MyApp({ Component, pageProps }) {
   const [data, setData] = useState(mockData);
@@ -19,9 +20,9 @@ function MyApp({ Component, pageProps }) {
     setBasicStyles,
   };
 
-  // useEffect(() => {
-
-  // }, [])
+  useEffect(() => {
+    console.log(generateCSS(data, basicStyles));
+  }, [data, basicStyles]);
 
   return <Component {...pageProps} {...props} />;
 }

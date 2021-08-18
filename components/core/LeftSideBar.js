@@ -4,6 +4,7 @@ import { Btn, DefaultLeftSide, EditingLeftSide } from "..";
 
 const LeftSideBar = (props) => {
   let { showLeftBar, setShowLeftBar, chosenElement } = props;
+
   return (
     <div
       className={` ${

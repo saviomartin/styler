@@ -92,6 +92,8 @@ const EditingLeftSide = ({
     }
   };
 
+  let currentElement = data.filter((item) => item.name === chosenElement)[0];
+
   return (
     <div className="!w-full h-full flex items-center flex-col py-4 text-[#fafafa] overflow-y-scroll">
       <Accordion
@@ -104,7 +106,11 @@ const EditingLeftSide = ({
         </p>
         <div className="border border-[#555] rounded-md mt-2">
           <CodeBlock
-            value={`.${chosenElement} {\n}`}
+            value={
+              currentElement.code
+                ? currentElement.code
+                : `.${chosenElement} {\n}`
+            }
             onChange={defaultChange}
           />
         </div>
@@ -157,7 +163,7 @@ const EditingLeftSide = ({
           }
           expanded={tabExpanded === "tab1"}
           onChange={handleTabChange("tab1")}
-          className="!w-full my-2"
+          className="!w-full my-3"
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
@@ -177,7 +183,7 @@ const EditingLeftSide = ({
           }
           expanded={tabExpanded === "tab2"}
           onChange={handleTabChange("tab2")}
-          className="!w-full my-2"
+          className="!w-full my-3"
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
@@ -197,7 +203,7 @@ const EditingLeftSide = ({
           }
           expanded={tabExpanded === "tab3"}
           onChange={handleTabChange("tab3")}
-          className="!w-full my-2"
+          className="!w-full my-3"
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
