@@ -18,6 +18,80 @@ const EditingLeftSide = ({
     setTabExpanded(isExpanded ? panel : false);
   };
 
+  const defaultChange = (code) => {
+    setData(
+      data.map((item) =>
+        item.name === chosenElement ? { ...item, code: code } : item
+      )
+    );
+  };
+
+  const hoverChange = (code) => {
+    setData(
+      data.map((item) =>
+        item.name === chosenElement
+          ? { ...item, options: { ...item.options, hover: code } }
+          : item
+      )
+    );
+  };
+
+  const darkModeChange = (code) => {
+    setData(
+      data.map((item) =>
+        item.name === chosenElement
+          ? { ...item, options: { ...item.options, darkMode: code } }
+          : item
+      )
+    );
+  };
+
+  const mediaChange = (code, device) => {
+    if (device === "sm") {
+      setData(
+        data.map((item) =>
+          item.name === chosenElement
+            ? {
+                ...item,
+                options: {
+                  ...item.options,
+                  media: { ...item.options.media, sm: code },
+                },
+              }
+            : item
+        )
+      );
+    } else if (device === "md") {
+      setData(
+        data.map((item) =>
+          item.name === chosenElement
+            ? {
+                ...item,
+                options: {
+                  ...item.options,
+                  media: { ...item.options.media, md: code },
+                },
+              }
+            : item
+        )
+      );
+    } else {
+      setData(
+        data.map((item) =>
+          item.name === chosenElement
+            ? {
+                ...item,
+                options: {
+                  ...item.options,
+                  media: { ...item.options.media, lg: code },
+                },
+              }
+            : item
+        )
+      );
+    }
+  };
+
   return (
     <div className="!w-full h-full flex items-center flex-col py-4 text-[#fafafa] overflow-y-scroll">
       <Accordion
@@ -26,12 +100,13 @@ const EditingLeftSide = ({
         name="Default"
       >
         <p className="text-sm text-[#aaa]">
-          Add the default styles to appear first.
+          Add the default styles to appear first.{" "}
+          {JSON.stringify(data.filter((item) => item.name === chosenElement))}
         </p>
         <div className="border border-[#555] rounded-md mt-2">
           <CodeBlock
             value={`.${chosenElement} {\n}`}
-            onChange={(h) => console.log(h)}
+            onChange={defaultChange}
           />
         </div>
       </Accordion>
@@ -46,7 +121,7 @@ const EditingLeftSide = ({
         <div className="border border-[#555] rounded-md mt-2">
           <CodeBlock
             value={`.${chosenElement}:hover {\n}`}
-            onChange={(h) => console.log(h)}
+            onChange={hoverChange}
           />
         </div>
       </Accordion>
@@ -61,7 +136,7 @@ const EditingLeftSide = ({
         <div className="border border-[#555] rounded-md mt-2">
           <CodeBlock
             value={`.dark .${chosenElement}:hover {\n}`}
-            onChange={(h) => console.log(h)}
+            onChange={darkModeChange}
           />
         </div>
       </Accordion>
@@ -83,12 +158,12 @@ const EditingLeftSide = ({
           }
           expanded={tabExpanded === "tab1"}
           onChange={handleTabChange("tab1")}
-          className="!w-full my-3"
+          className="!w-full my-2"
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
               value={`.${chosenElement} {\n}`}
-              onChange={(h) => console.log(h)}
+              onChange={(code) => mediaChange(code, "sm")}
             />
           </div>
         </Accordion>
@@ -103,12 +178,12 @@ const EditingLeftSide = ({
           }
           expanded={tabExpanded === "tab2"}
           onChange={handleTabChange("tab2")}
-          className="!w-full my-3"
+          className="!w-full my-2"
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
               value={`.${chosenElement} {\n}`}
-              onChange={(h) => console.log(h)}
+              onChange={(code) => mediaChange(code, "md")}
             />
           </div>
         </Accordion>
@@ -117,18 +192,18 @@ const EditingLeftSide = ({
           name={
             <p className="font-bold text-[#eee] flex items-center">
               <BsLaptop className="text-xl mr-[5px]" />
-              Phone (max-width:{" "}
+              Laptop (max-width:{" "}
               <span className="Inter text-sm ml-1">1024px</span>)
             </p>
           }
           expanded={tabExpanded === "tab3"}
           onChange={handleTabChange("tab3")}
-          className="!w-full my-3"
+          className="!w-full my-2"
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
               value={`.${chosenElement} {\n}`}
-              onChange={(h) => console.log(h)}
+              onChange={(code) => mediaChange(code, "lg")}
             />
           </div>
         </Accordion>
