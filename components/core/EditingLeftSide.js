@@ -125,7 +125,11 @@ const EditingLeftSide = ({
         </p>
         <div className="border border-[#555] rounded-md mt-2">
           <CodeBlock
-            value={`.${chosenElement}:hover {\n}`}
+            value={
+              currentElement.options.hover
+                ? currentElement.options.hover
+                : `.${chosenElement}:hover {\n}`
+            }
             onChange={hoverChange}
           />
         </div>
@@ -140,7 +144,11 @@ const EditingLeftSide = ({
         </p>
         <div className="border border-[#555] rounded-md mt-2">
           <CodeBlock
-            value={`.dark .${chosenElement}:hover {\n}`}
+            value={
+              currentElement.options.darkMode
+                ? currentElement.options.darkMode
+                : `.dark .${chosenElement} {\n}`
+            }
             onChange={darkModeChange}
           />
         </div>
@@ -167,7 +175,11 @@ const EditingLeftSide = ({
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
-              value={`.${chosenElement} {\n}`}
+              value={
+                currentElement.options.media.sm
+                  ? currentElement.options.media.sm
+                  : `.${chosenElement} {\n}`
+              }
               onChange={(code) => mediaChange(code, "sm")}
             />
           </div>
@@ -187,7 +199,11 @@ const EditingLeftSide = ({
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
-              value={`.${chosenElement} {\n}`}
+              value={
+                currentElement.options.media.md
+                  ? currentElement.options.media.md
+                  : `.${chosenElement} {\n}`
+              }
               onChange={(code) => mediaChange(code, "md")}
             />
           </div>
@@ -207,7 +223,11 @@ const EditingLeftSide = ({
         >
           <div className="border border-[#555] rounded-md mt-2">
             <CodeBlock
-              value={`.${chosenElement} {\n}`}
+              value={
+                currentElement.options.media.lg
+                  ? currentElement.options.media.lg
+                  : `.${chosenElement} {\n}`
+              }
               onChange={(code) => mediaChange(code, "lg")}
             />
           </div>
