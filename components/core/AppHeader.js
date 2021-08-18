@@ -2,18 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Btn, FancyBtn } from "..";
 import Link from "next/link";
 
-import {
-  Menu,
-  MenuList,
-  MenuButton,
-  MenuItem,
-  MenuLink,
-} from "@reach/menu-button";
+import { Menu, MenuList, MenuButton, MenuItem } from "@reach/menu-button";
 
-import { BsClipboard, BsCode, BsHouse, BsWindow } from "react-icons/bs";
+import { BsHouse, BsWindow } from "react-icons/bs";
 import { FiCopy } from "react-icons/fi";
 
-const AppHeader = () => {
+const AppHeader = ({ CSSCode }) => {
   const [isHomeURL, setIsHomeURL] = useState(false);
 
   useEffect(() => {
@@ -24,6 +18,10 @@ const AppHeader = () => {
       return setIsHomeURL(false);
     }
   });
+
+  const copyCSSCode = () => {
+    navigator.clipboard.writeText(CSSCode);
+  };
 
   return (
     <div className="w-full gradient relative p-2 flex items-center justify-between">
@@ -60,7 +58,11 @@ const AppHeader = () => {
           </MenuItem>
         </MenuList>
       </Menu>
-      <FancyBtn text="Copy CSS" icon={<FiCopy className="text-xl ml-2" />} />
+      <FancyBtn
+        text="Copy CSS"
+        onClick={copyCSSCode}
+        icon={<FiCopy className="text-xl ml-2" />}
+      />
     </div>
   );
 };

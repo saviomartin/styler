@@ -1,9 +1,9 @@
 import React from "react";
 import { Btn } from "..";
 
-const FancyBtn = ({ text, className, icon }) => {
+const FancyBtn = ({ text, className, icon, onClick }) => {
   return (
-    <Btn>
+    <Btn onClick={onClick}>
       <div
         class={`relative px-5 py-2 overflow-hidden font-medium text-gray-600 bg-gray-100 rounded-md shadow-inner group ${className}`}
       >

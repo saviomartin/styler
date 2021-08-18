@@ -7,9 +7,10 @@ import { generateCSS } from "../components/helper";
 function MyApp({ Component, pageProps }) {
   const [data, setData] = useState(mockData);
   const [basicStyles, setBasicStyles] = useState(
-    `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap')\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100%;\n  font-family: "Inter", sans-serif;\n}`
+    `@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');\n\n* {\n  box-sizing: border-box;\n}\n\nbody {\n  height: 100%;\n  font-family: "Inter", sans-serif;\n}`
   );
   const [chosenElement, setChosenElement] = useState("");
+  const [CSSCode, setCSSCode] = useState("");
 
   const props = {
     data,
@@ -18,10 +19,12 @@ function MyApp({ Component, pageProps }) {
     setChosenElement,
     basicStyles,
     setBasicStyles,
+    CSSCode,
+    setCSSCode,
   };
 
   useEffect(() => {
-    console.log(generateCSS(data, basicStyles));
+    setCSSCode(generateCSS(data, basicStyles));
   }, [data, basicStyles]);
 
   return <Component {...pageProps} {...props} />;

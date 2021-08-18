@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { AppHeader, AppFooter, AdvancedSettings } from "..";
 
-const PlayGround = ({ showLeftBar, chosenElement, setChosenElement, data }) => {
+const PlayGround = ({ showLeftBar, CSSCode, setChosenElement, data }) => {
   const [dimensions, setDimensions] = useState({
     width: "1366px",
     height: "672.95px",
@@ -81,7 +81,7 @@ const PlayGround = ({ showLeftBar, chosenElement, setChosenElement, data }) => {
         showLeftBar ? "w-[64%]" : "w-full"
       } h-full bg-[#EDF0F2] relative overflow-hidden`}
     >
-      <AppHeader />
+      <AppHeader CSSCode={CSSCode} />
       <div className="playground h-full w-full relative flex items-center justify-center">
         <AdvancedSettings {...props} />
         <div className="scale-[.95] lg:scale-[.85] mt-[-5%]">
