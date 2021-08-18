@@ -14,7 +14,8 @@
 .tab {
   clip-path: polygon(0 0, 100% 15%, 100% 85%, 0 100%);
 }
-.hashnode-blog-demo * {
+.hashnode-blog-demo *,
+.Inter {
   font-family: "Inter", sans-serif;
 }
 .transition-500 {
