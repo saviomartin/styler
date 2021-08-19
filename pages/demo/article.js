@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 
-const article = () => {
+const article = ({ data }) => {
   useEffect(() => {
     let anchors = document
       .querySelector(".hashnode-blog-demo")
