@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
+import { FiX } from "react-icons/fi";
 import { Accordion, CodeBlock } from "..";
+import Btn from "../utils/Btn";
 
 const EditingLeftSide = ({
   data,
@@ -95,7 +97,17 @@ const EditingLeftSide = ({
   let currentElement = data.filter((item) => item.name === chosenElement)[0];
 
   return (
-    <div className="!w-full h-full flex items-center flex-col py-4 text-[#fafafa] overflow-y-scroll">
+    <div className="!w-full h-full flex items-center flex-col py-4 text-[#fafafa] overflow-y-scroll leftBar">
+      <div
+        className="gradient shadow-sm absolute top-[15px] right-[22.5px] p-[1px] z-[100] rounded-md"
+        onClick={() => setChosenElement("")}
+      >
+        <Btn className="!rounded-md">
+          <div className="bg-[#1B1F25] p-3 rounded-md">
+            <FiX className="text-2xl text-white" />
+          </div>
+        </Btn>
+      </div>
       <Accordion
         expanded={expanded === "panel1"}
         onChange={handleChange("panel1")}
