@@ -1,5 +1,6 @@
 import React from "react";
-import { CodeBlock } from "..";
+import { FaTwitter } from "react-icons/fa";
+import { CodeBlock, Btn } from "..";
 
 const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
   return (
@@ -72,6 +73,29 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
           onChange={(code) => setBasicStyles(code)}
         />
       </div>
+      <a
+        href="https://twitter.com/saviomartin7"
+        target="_blank"
+        rel="noreferrer"
+        className="gradient w-full p-[1px] rounded-md mt-2"
+      >
+        <div className="bg-[#1B1F25] h-full p-full p-[10px] rounded-md flex items-center justify-between">
+          <div className="flex items-center">
+            <img
+              src="https://avatars.githubusercontent.com/saviomartin"
+              alt="Savio"
+              className="h-[35px] w-[35px] rounded-full"
+            />
+            <h1 className="text-[17px] ml-2">
+              By
+              <span className="font-bold text-transparent bg-clip-text bg-gradient-to-br from-[#a770ef] to-[#fdb99b] ml-1">
+                Savio Martin
+              </span>
+            </h1>
+          </div>
+          <FaTwitter className="text-lg text-[#fdb99b] mr-2" />
+        </div>
+      </a>
     </div>
   );
 };
