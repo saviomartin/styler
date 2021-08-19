@@ -1,6 +1,27 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const article = () => {
+  useEffect(() => {
+    let anchors = document
+      .querySelector(".hashnode-blog-demo")
+      .querySelectorAll("a");
+    for (var i = 0; i < anchors.length; i++) {
+      anchors[i].onclick = function () {
+        return false;
+      };
+    }
+  });
+
+  useEffect(() => {
+    data.forEach((item) => {
+      const element = document.querySelector(`.${item.name}`);
+
+      if (element) {
+        element.classList.add("component");
+        element.setAttribute("tooltip", item.name);
+      }
+    });
+  });
   return (
     <div className="hashnode-blog-demo">
       <link rel="preconnect" href="https://fonts.googleapis.com" />
