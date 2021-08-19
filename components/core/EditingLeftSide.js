@@ -214,7 +214,7 @@ const EditingLeftSide = ({
             <p className="font-bold text-[#eee] flex items-center">
               <BsLaptop className="text-xl mr-[5px]" />
               Laptop (max-width:{" "}
-              <span className="Inter text-sm ml-1">1024px</span>)
+              <span className="Inter text-sm ml-1">1536px</span>)
             </p>
           }
           expanded={tabExpanded === "tab3"}

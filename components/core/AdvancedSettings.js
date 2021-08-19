@@ -22,8 +22,8 @@ const AdvancedSettings = ({ dimensions, setDimensions }) => {
       });
     } else if (selectedMedia.id === 2) {
       setDimensions({
-        width: "1024px",
-        height: "768px",
+        width: "768px",
+        height: "1024px",
       });
     } else {
       setDimensions({

@@ -45,14 +45,23 @@ export const generateCSS = (data, basicStyles) => {
   });
 
   if (media) {
-    if (media.sm) {
-      code += `\n\n@media (min-width: 640px) {\n${media.sm.slice(0, -1)}}`;
+    if (media.lg) {
+      code += `\n\n@media only screen and (max-width: 1536px) {\n${media.lg.slice(
+        0,
+        -1
+      )}}`;
     }
     if (media.md) {
-      code += `\n\n@media (min-width: 768px) {\n${media.md.slice(0, -1)}}`;
+      code += `\n\n@media only screen and (max-width: 768px) {\n${media.md.slice(
+        0,
+        -1
+      )}}`;
     }
-    if (media.lg) {
-      code += `\n\n@media (min-width: 1024px) {\n${media.lg.slice(0, -1)}}`;
+    if (media.sm) {
+      code += `\n\n@media only screen and (max-width: 640px) {\n${media.sm.slice(
+        0,
+        -1
+      )}}`;
     }
   }
 
