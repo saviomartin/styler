@@ -3,7 +3,7 @@ import { FiChevronLeft } from "react-icons/fi";
 import { Btn, DefaultLeftSide, EditingLeftSide } from "..";
 
 const LeftSideBar = (props) => {
-  let { showLeftBar, setShowLeftBar, chosenElement } = props;
+  let { showLeftBar, setShowLeftBar, chosenElement, user } = props;
 
   return (
     <div
@@ -11,6 +11,7 @@ const LeftSideBar = (props) => {
         showLeftBar ? "w-[36%]" : "w-0"
       } h-full bg-[#282F38] shadow relative border-r border-[#888] text-white`}
     >
+      {JSON.stringify(user)}
       {chosenElement ? (
         <EditingLeftSide {...props} />
       ) : (

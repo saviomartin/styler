@@ -3,6 +3,7 @@ import "tailwindcss/tailwind.css";
 import "../styles/App.css";
 import mockData from "../components/data";
 import { generateCSS } from "../components/helper";
+import { UserProvider } from "@auth0/nextjs-auth0";
 
 function MyApp({ Component, pageProps }) {
   const [data, setData] = useState(mockData);
@@ -27,7 +28,11 @@ function MyApp({ Component, pageProps }) {
     setCSSCode(generateCSS(data, basicStyles));
   }, [data, basicStyles]);
 
-  return <Component {...pageProps} {...props} />;
+  return (
+    <UserProvider>
+      <Component {...pageProps} {...props} />
+    </UserProvider>
+  );
 }
 
 export default MyApp;
