@@ -1,7 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { AppHeader, AppFooter, AdvancedSettings } from "..";
 
-const PlayGround = ({ showLeftBar, CSSCode, setChosenElement, data }) => {
+const PlayGround = ({
+  showLeftBar,
+  CSSCode,
+  setChosenElement,
+  data,
+  iframeSrc,
+}) => {
   const [dimensions, setDimensions] = useState({
     width: "1366px",
     height: "672.95px",
@@ -94,7 +100,7 @@ const PlayGround = ({ showLeftBar, CSSCode, setChosenElement, data }) => {
         <AdvancedSettings {...props} />
         <div className="scale-[.95] lg:scale-[.85] mt-[-5%]">
           <iframe
-            src="/demo/home"
+            src={iframeSrc ? iframeSrc : "/demo/home"}
             id="iframe"
             frameborder="0"
             className="relative select-none shadow-xl overflow-scroll"
