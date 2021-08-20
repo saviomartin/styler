@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FiThumbsUp, FiTwitter } from "react-icons/fi";
 import { AppHeader, AppFooter, AdvancedSettings, PopupWrapper, Btn } from "..";
 
 const PlayGround = ({
@@ -9,6 +10,7 @@ const PlayGround = ({
   iframeSrc,
   user,
 }) => {
+  const [copied, setCopied] = useState(false);
   const [dimensions, setDimensions] = useState({
     width: "1366px",
     height: "672.95px",
@@ -110,13 +112,33 @@ const PlayGround = ({
     iframe.body.appendChild(style);
   }, [CSSCode]);
 
+  let guides = [
+    {
+      text: "Custom CSS is currenty a ambassador only feature",
+    },
+    {
+      text: "Toggle Custom CSS button from your dashboard under appearence tab",
+    },
+    {
+      text: "You can see an editor, choose which page and add your copied code",
+    },
+    {
+      text: "Once you're done, click publish to make it appear on your site 🎉",
+    },
+  ];
+
   return (
     <div
       className={`${
         showLeftBar ? "w-[64%]" : "w-full"
       } h-full bg-[#EDF0F2] relative overflow-hidden`}
     >
-      <AppHeader CSSCode={CSSCode} user={user} />
+      <AppHeader
+        CSSCode={CSSCode}
+        user={user}
+        copied={copied}
+        setCopied={setCopied}
+      />
       <div className="playground h-full w-full relative flex items-center justify-center">
         <AdvancedSettings {...props} />
         <div className="scale-[.95] lg:scale-[.85] mt-[-5%]">
@@ -130,9 +152,53 @@ const PlayGround = ({
         </div>
       </div>
       <AppFooter />
-      {/* <PopupWrapper open={showAsFullScreen} setOpen={setShowAsFullScreen}>
-        hello wrold
-      </PopupWrapper> */}
+      <PopupWrapper open={copied} setOpen={setCopied}>
+        <div className="w-[80vw] h-[80vh] flex items-center justify-center">
+          <img src="/assets/laptop.png" alt="Laptop" height="400" width="400" />
+          <div className="">
+            <h1 className="text-4xl font-extrabold">CSS Copied</h1>
+            <p className="text-sm font-semibold w-[350px] text-[#666] mt-2">
+              You have copied your CSS code to your clipboard. You can now start
+              using it in your site. Here is how 👇
+            </p>
+            <div className="mt-4">
+              {guides.map((item, index) => (
+                <div className="flex items-center my-1">
+                  <div className="h-[24px] w-[24px] rounded-full gradient mr-2 text-sm flex items-center justify-center font-bold text-white Inter">
+                    {index + 1}
+                  </div>
+                  <p className="continuous-1 text-sm font-semibold text-[#444]">
+                    {item.text}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <Btn className="!mt-4" onClick={() => setCopied(!copied)}>
+              <div class="relative inline-flex items-center justify-center p-4 px-3 py-2 overflow-hidden font-medium text-indigo-600 rounded-lg shadow-2xl group">
+                <span class="absolute top-0 left-0 w-40 h-40 -mt-10 -ml-3 transition-all duration-700 bg-[#a770ef] rounded-full blur-md ease"></span>
+                <span class="absolute inset-0 w-full h-full transition duration-700 group-hover:rotate-180 ease">
+                  <span class="absolute bottom-0 left-0 w-24 h-24 -ml-10 bg-[#cf8bf3] rounded-full blur-md"></span>
+                  <span class="absolute bottom-0 right-0 w-24 h-24 -mr-10 bg-[#ff00bf] rounded-full blur-md"></span>
+                </span>
+                <span class="relative text-white capitalize flex">
+                  <FiThumbsUp className="text-xl mr-2" />
+                  Thanks, I'm Good
+                </span>
+              </div>
+            </Btn>
+            <div className="flex items-center mt-2 text-[#1DA1F2]">
+              <a
+                href="https://twitter.com/saviomartin7"
+                target="_blank"
+                className="text-sm font-semibold"
+              >
+                Follow @saviomartin7 on Twitter
+              </a>
+              <FiTwitter className="text-lg ml-2" />
+            </div>
+          </div>
+        </div>
+      </PopupWrapper>
     </div>
   );
 };

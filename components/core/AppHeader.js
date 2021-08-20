@@ -12,7 +12,7 @@ import {
 } from "react-icons/bs";
 import { FiCopy, FiLogOut } from "react-icons/fi";
 
-const AppHeader = ({ CSSCode, user }) => {
+const AppHeader = ({ CSSCode, user, copied, setCopied }) => {
   const [isHomeURL, setIsHomeURL] = useState(false);
 
   useEffect(() => {
@@ -26,6 +26,7 @@ const AppHeader = ({ CSSCode, user }) => {
 
   const copyCSSCode = () => {
     navigator.clipboard.writeText(CSSCode);
+    setCopied(!copied);
   };
 
   return (
