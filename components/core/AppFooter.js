@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { BsArrowsAngleContract, BsArrowsAngleExpand } from "react-icons/bs";
-import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import screenfull from "screenfull";
 import Btn from "../utils/Btn";
 
@@ -13,9 +13,10 @@ const AppFooter = () => {
   };
   return (
     <div className="absolute bottom-[15px] right-[15px] p-2 rounded-md bg-white shadow-xl z-10 flex items-center">
-      <Btn href="/fullscreen/home">
-        <div className="p-2">
-          <FiExternalLink className="text-xl" />
+      <Btn href="https://github.com/saviomartin/styler">
+        <div className="p-2 flex items-center">
+          <FiGithub className="text-xl mr-1" />
+          <span className="Inter">23</span>
         </div>
       </Btn>
       <div className="h-[30px] w-[1px] bg-[#ddd]"></div>

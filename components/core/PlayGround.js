@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { AppHeader, AppFooter, AdvancedSettings, PopupWrapper } from "..";
+import { AppHeader, AppFooter, AdvancedSettings, PopupWrapper, Btn } from "..";
 
 const PlayGround = ({
   showLeftBar,
@@ -13,7 +13,6 @@ const PlayGround = ({
     width: "1366px",
     height: "672.95px",
   });
-  const [showAsFullScreen, setShowAsFullScreen] = useState(true);
 
   // resize cover image to fit the view
   const resizeCoverImage = () => {
@@ -131,9 +130,9 @@ const PlayGround = ({
         </div>
       </div>
       <AppFooter />
-      <PopupWrapper open={showAsFullScreen} setOpen={setShowAsFullScreen}>
+      {/* <PopupWrapper open={showAsFullScreen} setOpen={setShowAsFullScreen}>
         hello wrold
-      </PopupWrapper>
+      </PopupWrapper> */}
     </div>
   );
 };

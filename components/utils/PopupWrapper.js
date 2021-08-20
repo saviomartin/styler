@@ -20,7 +20,7 @@ const ModalPopup = ({ open, setOpen, children }) => {
       }}
     >
       <Fade in={open}>
-        <div className="bg-white p-5 rounded-xl !shadow-md w-[45%] outline-none relative">
+        <div className="bg-white rounded-xl !shadow-md w-[90%] h-[90vh] overflow-hidden outline-none relative">
           <div
             className="shadow-sm absolute top-2 right-2 p-[1px] z-[100] rounded-md"
             onClick={() => setOpen(false)}
