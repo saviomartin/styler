@@ -754,19 +754,6 @@ let mockData = [
     },
   },
   {
-    name: "blog-title",
-    code: "",
-    options: {
-      hover: "",
-      darkMode: "",
-      media: {
-        sm: "",
-        md: "",
-        lg: "",
-      },
-    },
-  },
-  {
     name: "blog-header",
     code: "",
     options: {
