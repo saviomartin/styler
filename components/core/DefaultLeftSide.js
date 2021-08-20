@@ -37,7 +37,7 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
             rel="noreferrer"
             className="continuous-1 text-base"
           >
-            Buy Me A Coffee
+            Use Custom CSS [Guide]
           </a>
         </div>
         <div className="flex items-center">
@@ -48,9 +48,10 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
             rel="noreferrer"
             className="continuous-1 text-base"
           >
-            How to Use Styler
+            Buy Me A Coffee
           </a>
         </div>
+
         <div className="flex items-center">
           <div className="h-2 w-2 rounded-full gradient mr-2"></div>
           <a
