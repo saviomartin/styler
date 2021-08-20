@@ -7,6 +7,7 @@ const PlayGround = ({
   setChosenElement,
   data,
   iframeSrc,
+  user,
 }) => {
   const [dimensions, setDimensions] = useState({
     width: "1366px",
@@ -99,18 +100,6 @@ const PlayGround = ({
         };
       }
     });
-
-    // iframe.onclick = (e) => {
-    //   if (element !== undefined && element.length > 1) {
-    //     if (data.filter((item) => item.name === element).length > 0) {
-    //       if (data.filter((item) => item.name === element)[0].name) {
-    //         setChosenElement(
-    //           data.filter((item) => item.name === element)[0].name
-    //         );
-    //       }
-    //     }
-    //   }
-    // };
   }, []);
 
   useEffect(() => {
@@ -127,7 +116,7 @@ const PlayGround = ({
         showLeftBar ? "w-[64%]" : "w-full"
       } h-full bg-[#EDF0F2] relative overflow-hidden`}
     >
-      <AppHeader CSSCode={CSSCode} />
+      <AppHeader CSSCode={CSSCode} user={user} />
       <div className="playground h-full w-full relative flex items-center justify-center">
         <AdvancedSettings {...props} />
         <div className="scale-[.95] lg:scale-[.85] mt-[-5%]">

@@ -11,7 +11,6 @@ const LeftSideBar = (props) => {
         showLeftBar ? "w-[36%]" : "w-0"
       } h-full bg-[#282F38] shadow relative border-r border-[#888] text-white`}
     >
-      {JSON.stringify(user)}
       {chosenElement ? (
         <EditingLeftSide {...props} />
       ) : (
