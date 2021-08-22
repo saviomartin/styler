@@ -48,7 +48,7 @@ export default function Home() {
           <div className="flex items-center">
             <h1 className="flex items-center justify-center">
               <span className="text-3xl font-extrabold ml-2 gradient-text bg-app-graient-to-l">
-                Slickr
+                Styler
               </span>
             </h1>
           </div>
@@ -120,16 +120,22 @@ export default function Home() {
           browers, grab the code and start using ⚡️ Wohoo, its that easy!
         </p>
         <div className="mt-5 flex">
-          <FancyBtn
-            text="Start Creating"
-            icon={<FiArrowRight className="text-xl ml-2" />}
-          />
-          <div className="ml-2">
+          <Link href="/app">
+            <FancyBtn
+              text="Start from Blank"
+              icon={<FiArrowRight className="text-xl ml-2" />}
+            />
+          </Link>
+          <a
+            className="ml-2"
+            href="https://github.com/saviomartin/styler"
+            target="_blank"
+          >
             <FancyBtn
               text="Star on Github"
               icon={<FiGithub className="text-xl ml-2" />}
             />
-          </div>
+          </a>
         </div>
       </div>
       <div className="bg-[#fff] shadow-lg w-10/12 border border-[#ddd] rounded-md my-4 p-6">

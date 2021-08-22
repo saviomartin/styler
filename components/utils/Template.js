@@ -16,10 +16,7 @@ const Template = ({ item, src }) => {
   };
 
   return (
-    <div
-      className="bg-white p-4 rounded-md border border-[#eee] flex items-center justify-center flex-col"
-      id
-    >
+    <div className="bg-white p-4 rounded-md border border-[#eee] flex items-center justify-center flex-col mx-2">
       <div className="border border-[#ddd] rounded-md shadow-lg">
         <div className="w-full px-3 py-2 rounded-t-md bg-[#2D3748] flex items-center">
           <div className="h-2 w-2 rounded-full bg-[#EF6464]"></div>
