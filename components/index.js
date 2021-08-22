@@ -13,6 +13,7 @@ export { default as EditingLeftSide } from "./core/EditingLeftSide";
 export { default as Btn } from "./utils/Btn";
 export { default as Accordion } from "./utils/Accordion";
 export { default as PopupWrapper } from "./utils/PopupWrapper";
+export { default as Template } from "./utils/Template";
 export { default as FancyBtn } from "./utils/FancyBtn";
 
 // dynamic export

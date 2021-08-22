@@ -72,3 +72,7 @@
 .gradient-left {
   background: linear-gradient(to left, #fdb99b, #cf8bf3, #a770ef);
 }
+
+.iframe-component {
+  transform: scale(0.25);
+}

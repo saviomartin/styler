@@ -13,7 +13,7 @@ const PlayGround = ({
   const [copied, setCopied] = useState(false);
   const [dimensions, setDimensions] = useState({
     width: "1366px",
-    height: "672.95px",
+    height: "768px",
   });
 
   // resize cover image to fit the view

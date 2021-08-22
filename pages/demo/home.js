@@ -1198,7 +1198,7 @@ const homepage = ({ data }) => {
                           <img
                             className="post-cover"
                             alt="Create a Dark Mode toggler with Tailwind ⚡️"
-                            src="https://cdn.hashnode.com/res/hashnode/image/upload/v1621847572439/PoQGufqKv.gif?w=1600&h=840&fit=crop&crop=entropy&auto=format,compress&gif-q=60&format=webm"
+                            src="https://saviomartin.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1624853844471%2F6UqLckGnh.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75"
                           />
                         </a>
                       </div>

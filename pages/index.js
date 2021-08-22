@@ -1,5 +1,5 @@
 import { useUser } from "@auth0/nextjs-auth0";
-import { Btn, FancyBtn } from "../components";
+import { Btn, FancyBtn, Template } from "../components";
 import Link from "next/link";
 
 import {
@@ -135,13 +135,30 @@ export default function Home() {
       <div className="bg-[#fff] shadow-lg w-10/12 border border-[#ddd] rounded-md my-4 p-6">
         <h1 className="font-bold text-3xl text-[#333]">Templates</h1>
         <p className="text-sm text-[#777] mt-2">
-          Start from a scratch or choose a template
+          Start from a scratch or choose a template. Just click on the template
+          to choose.
         </p>
-        <div className="w-full bg-[#f7f9fa] border border-[#ddd] rounded-md my-2 mt-4 p-6">
+        <div className="w-full bg-[#f7f9fa] border border-[#eee] rounded-md my-2 mt-4 p-6">
           <h1 className="font-bold text-xl text-[#333] flex items-center">
             Home <FiArrowRight className="ml-1 text-lg" />
           </h1>
-          {JSON.stringify(templates)}
+          <div className="flex w-full mt-3">
+            {templates.home.length > 0 &&
+              templates.home.map((item) => (
+                <Template item={item} src="/demo/home" />
+              ))}
+          </div>
+        </div>
+        <div className="w-full bg-[#f7f9fa] border border-[#eee] rounded-md my-2 mt-4 p-6">
+          <h1 className="font-bold text-xl text-[#333] flex items-center">
+            Article <FiArrowRight className="ml-1 text-lg" />
+          </h1>
+          <div className="flex w-full mt-3">
+            {templates.article.length > 0 &&
+              templates.article.map((item) => (
+                <Template item={item} src="/demo/article" />
+              ))}
+          </div>
         </div>
       </div>
     </div>

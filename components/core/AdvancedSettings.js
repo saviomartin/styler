@@ -28,7 +28,7 @@ const AdvancedSettings = ({ dimensions, setDimensions }) => {
     } else {
       setDimensions({
         width: "1366px",
-        height: "672.95px",
+        height: "768px",
       });
     }
   }, [selectedMedia]);
