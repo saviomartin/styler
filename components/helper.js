@@ -45,7 +45,7 @@ export const generateCSS = (data, basicStyles) => {
   });
 
   if (media) {
-    if (media.lg) {
+    if (media.lg && media.lg.charAt(media.lg.length - 2) !== `/n`) {
       code += `\n\n@media only screen and (max-width: 1536px) {\n${media.lg.slice(
         0,
         -1
