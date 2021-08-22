@@ -2982,23 +2982,7 @@ code * {
           }}
         />
       </next-route-announcer>
-      <div id="scrnli_recorder_root" />
-      <iframe
-        src="chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/audio-devices.html"
-        allow="microphone"
-        style={{ display: "none" }}
-      />
-      <input type="file" id name="file" style={{ display: "none" }} />
-      <div
-        data-v-20e3b604
-        className="container_selected_area"
-        style={{
-          cursor:
-            'url("chrome-extension://ijejnggjjphlenbhmjhhgcdpehhacaal/assets/images/cursor-imagen.svg") 9 9, crosshair',
-        }}
-      >
-        <div data-v-20e3b604 className="area" />
-      </div>
+      <style id="style"></style>
     </div>
   );
 };

@@ -34,9 +34,13 @@ const AppHeader = ({ CSSCode, user, copied, setCopied }) => {
       <Menu>
         <MenuButton>
           <Btn className="!rounded-md">
-            <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow">
-              <BsHouse className="text-xl mr-2" />
-              Home
+            <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow capitalize">
+              {isHomeURL ? (
+                <BsHouse className="text-xl mr-2" />
+              ) : (
+                <BsWindow className="text-xl mr-2" />
+              )}
+              {isHomeURL ? "Home" : "Article"}
             </div>
           </Btn>
         </MenuButton>
@@ -64,7 +68,6 @@ const AppHeader = ({ CSSCode, user, copied, setCopied }) => {
           </MenuItem>
         </MenuList>
       </Menu>
-      {/* {user ? user.name : "login"} */}
       <div className="flex items-center">
         <FancyBtn
           text="Copy CSS"

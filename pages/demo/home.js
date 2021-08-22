@@ -1096,18 +1096,12 @@ const homepage = ({ data }) => {
                 </div>
                 <div className="blog-posts-wrapper css-13wylk3">
                   <div className="blog-post-card css-16gx0ij">
-                    <div className="css-w2ir88">
-                      <svg className="css-gflyy0" viewBox="0 0 384 512">
-                        <path d="M300.8 203.9L290.7 128H328c13.2 0 24-10.8 24-24V24c0-13.2-10.8-24-24-24H56C42.8 0 32 10.8 32 24v80c0 13.2 10.8 24 24 24h37.3l-10.1 75.9C34.9 231.5 0 278.4 0 335.2c0 8.8 7.2 16 16 16h160V472c0 .7.1 1.3.2 1.9l8 32c2 8 13.5 8.1 15.5 0l8-32c.2-.6.2-1.3.2-1.9V351.2h160c8.8 0 16-7.2 16-16 .1-56.8-34.8-103.7-83.1-131.3zM33.3 319.2c6.8-42.9 39.6-76.4 79.5-94.5L128 96H64V32h256v64h-64l15.3 128.8c40 18.2 72.7 51.8 79.5 94.5H33.3z" />
-                      </svg>
-                      <span>Pinned article</span>
-                    </div>
                     <section className="blog-post-card-wrapper css-zlewtl">
                       <div className="css-1fx2wyw">
                         <h1 className="blog-post-card-title css-on3vf4">
                           <a
-                            aria-label="Introducing Slickr - The most powerful Cover Image generator for your Hashnode blog ✨️"
-                            href="/introducing-slickr-the-most-powerful-cover-image-generator-for-your-hashnode-blog"
+                            aria-label="Create a Dark Mode toggler with Tailwind ⚡️"
+                            href="/create-a-dark-mode-toggler-with-tailwind"
                           >
                             Introducing Slickr - The most powerful Cover Image
                             generator for your Hashnode blog ✨️
@@ -1115,37 +1109,37 @@ const homepage = ({ data }) => {
                         </h1>
                         <div className="blog-post-card-meta css-y07gv8">
                           <a
-                            aria-label="Introducing Slickr - The most powerful Cover Image generator for your Hashnode blog ✨️"
+                            aria-label="Create a Dark Mode toggler with Tailwind ⚡️"
                             className="blog-post-card-time css-nfd03i"
-                            href="/introducing-slickr-the-most-powerful-cover-image-generator-for-your-hashnode-blog"
+                            href="/create-a-dark-mode-toggler-with-tailwind"
                           >
-                            Jul 29, 2021
+                            May 24, 2021
                           </a>
                           <a
-                            aria-label="Introducing Slickr - The most powerful Cover Image generator for your Hashnode blog ✨️ min read"
-                            href="/introducing-slickr-the-most-powerful-cover-image-generator-for-your-hashnode-blog"
+                            aria-label="Create a Dark Mode toggler with Tailwind ⚡️ min read"
+                            href="/create-a-dark-mode-toggler-with-tailwind"
                             className="css-bbt5q4"
                           >
                             <svg className="css-hb3dfw" viewBox="0 0 512 512">
                               <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm216 248c0 118.7-96.1 216-216 216-118.7 0-216-96.1-216-216 0-118.7 96.1-216 216-216 118.7 0 216 96.1 216 216zm-148.9 88.3l-81.2-59c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h14c6.6 0 12 5.4 12 12v146.3l70.5 51.3c5.4 3.9 6.5 11.4 2.6 16.8l-8.2 11.3c-3.9 5.3-11.4 6.5-16.8 2.6z" />
                             </svg>
-                            <span>8{/* */} min read </span>
+                            <span>5{/* */} min read </span>
                           </a>
                           <a
-                            aria-label="2642 views"
-                            href="/introducing-slickr-the-most-powerful-cover-image-generator-for-your-hashnode-blog"
+                            aria-label="370 views"
+                            href="/create-a-dark-mode-toggler-with-tailwind"
                             className="css-8oy3ng"
                           >
                             <svg className="css-hb3dfw" viewBox="0 0 384 512">
                               <path d="M136 320h-16c-4.4 0-8 3.6-8 8v96c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-96c0-4.4-3.6-8-8-8zm64-96h-16c-4.4 0-8 3.6-8 8v192c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V232c0-4.4-3.6-8-8-8zm40 72v128c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8V296c0-4.4-3.6-8-8-8h-16c-4.4 0-8 3.6-8 8zM369.9 97.98L286.02 14.1c-9-9-21.2-14.1-33.89-14.1H47.99C21.5.1 0 21.6 0 48.09v415.92C0 490.5 21.5 512 47.99 512h288.02c26.49 0 47.99-21.5 47.99-47.99V131.97c0-12.69-5.1-24.99-14.1-33.99zM256.03 32.59c2.8.7 5.3 2.1 7.4 4.2l83.88 83.88c2.1 2.1 3.5 4.6 4.2 7.4h-95.48V32.59zm95.98 431.42c0 8.8-7.2 16-16 16H47.99c-8.8 0-16-7.2-16-16V48.09c0-8.8 7.2-16.09 16-16.09h176.04v104.07c0 13.3 10.7 23.93 24 23.93h103.98v304.01z" />
                             </svg>
-                            <span>2.6K{/* */} views</span>
+                            <span>370{/* */} views</span>
                           </a>
                         </div>
                         <p className="blog-post-card-brief css-ch9q11">
                           <a
-                            aria-label="Introducing Slickr - The most powerful Cover Image generator for your Hashnode blog ✨️"
-                            href="/introducing-slickr-the-most-powerful-cover-image-generator-for-your-hashnode-blog"
+                            aria-label="Create a Dark Mode toggler with Tailwind ⚡️"
+                            href="/create-a-dark-mode-toggler-with-tailwind"
                           >
                             Hello Folks 👋 What's up friends, this is Savio
                             here. I hope you all are doing good. I'm young web
@@ -1157,71 +1151,20 @@ const homepage = ({ data }) => {
                       </div>
                       <div className="blog-post-card-cover css-4hopac">
                         <a
-                          aria-label="Introducing Slickr - The most powerful Cover Image generator for your Hashnode blog ✨️"
-                          href="/introducing-slickr-the-most-powerful-cover-image-generator-for-your-hashnode-blog"
+                          aria-label="Create a Dark Mode toggler with Tailwind ⚡️"
+                          href="/create-a-dark-mode-toggler-with-tailwind"
                           className="css-1vqi5ql"
                         >
-                          <div
-                            style={{
-                              display: "inline-block",
-                              maxWidth: "100%",
-                              overflow: "hidden",
-                              position: "relative",
-                              boxSizing: "border-box",
-                              margin: 0,
-                            }}
-                          >
-                            <div
-                              style={{
-                                boxSizing: "border-box",
-                                display: "block",
-                                maxWidth: "100%",
-                              }}
-                            >
-                              <img
-                                style={{
-                                  maxWidth: "100%",
-                                  display: "block",
-                                  margin: 0,
-                                  border: "none",
-                                  padding: 0,
-                                }}
-                                alt
-                                aria-hidden="true"
-                                role="presentation"
-                                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI4NDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
-                              />
-                            </div>
-                            <img
-                              alt="Introducing Slickr - The most powerful Cover Image generator for your Hashnode blog ✨️"
-                              src="https://townhall.hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1627545572733%2FjUcmuLxva.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75"
-                              decoding="async"
-                              className="post-cover"
-                              style={{
-                                position: "absolute",
-                                inset: 0,
-                                boxSizing: "border-box",
-                                padding: 0,
-                                border: "none",
-                                margin: "auto",
-                                display: "block",
-                                width: 0,
-                                height: 0,
-                                minWidth: "100%",
-                                maxWidth: "100%",
-                                minHeight: "100%",
-                                maxHeight: "100%",
-                                filter: "none",
-                                backgroundSize: "cover",
-                                backgroundImage: "none",
-                              }}
-                              srcSet="https://townhall.hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1627545572733%2FjUcmuLxva.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75 1x, https://townhall.hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1627545572733%2FjUcmuLxva.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=3840&q=75 2x"
-                            />
-                          </div>
+                          <img
+                            className="post-cover"
+                            alt="Create a Dark Mode toggler with Tailwind ⚡️"
+                            src="https://saviomartin.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1627545572733%2FjUcmuLxva.png%3Fw%3D1600%26h%3D840%26fit%3Dcrop%26crop%3Dentropy%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=1920&q=75"
+                          />
                         </a>
                       </div>
                     </section>
                   </div>
+
                   <div className="blog-post-card css-16gx0ij">
                     <section className="blog-post-card-wrapper css-zlewtl">
                       <div className="css-1fx2wyw">
@@ -1409,78 +1352,10 @@ const homepage = ({ data }) => {
             }
             `}
         </style>
+        <style id="style"></style>
       </>
     </div>
   );
 };
 
 export default homepage;
-
-{
-  /* <style
-            dangerouslySetInnerHTML={{
-              __html:
-                ".css-4dfc6h {\n    padding-top: 3rem;\n    padding-bottom: 3rem;\n    text-align: center;\n    border-top-width: 1px;\n    --tw-bg-opacity: 1;\n    background-color: rgba(250, 250, 250, var(--tw-bg-opacity));\n    --tw-text-opacity: 1;\n    color: rgba(66, 66, 66, var(--tw-text-opacity));\n}\n.css-1km1bze {\n  display: flex;\n  flex-direction: column;\n  -webkit-box-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  justify-content: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  --tw-text-opacity: 1;\n  color: rgba(51, 51, 51, var(--tw-text-opacity));\n}\n.css-z0tjgn {\n  display: flex;\n  flex-direction: row;\n  -webkit-box-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  justify-content: center;\n  margin-bottom: 1.25rem;\n}\n.css-2559wl {\n  margin-right: 1rem;\n  font-size: 0.875rem;\n  line-height: 1.375;\n  --tw-text-opacity: 1;\n  color: rgba(97, 97, 97, var(--tw-text-opacity));\n}\n.css-171wbv4 {\n  padding-left: 0.5rem;\n  padding-right: 0.5rem;\n}\n.css-171wbv4 {\n    padding-left: 0.5rem;\n    padding-right: 0.5rem;\n}\n.css-1km1bze {\n  display: flex;\n  flex-direction: column;\n  -webkit-box-align: center;\n  align-items: center;\n  -webkit-box-pack: center;\n  justify-content: center;\n  font-size: 0.875rem;\n  line-height: 1.25rem;\n  --tw-text-opacity: 1;\n  color: rgba(51, 51, 51, var(--tw-text-opacity));\n}\n.css-1v4n890 {\n  display: block;\n  margin-bottom: 0.25rem;\n  line-height: 1.375;\n  --tw-text-opacity: 1;\n  color: rgba(97, 97, 97, var(--tw-text-opacity));\n} \n.css-1trayuc {\n  width: 8rem;\n  fill: currentcolor;\n}\n          ",
-            }}
-          />
-
-          <style>
-            {`.dark .blog-footer-area{
-              background-color: #333;
-              border-color: #424242;
-              color: #9e9e9e;
-            }
-            .dark .blog-footer-credits p{
-              color: #bdbdbd;
-            }
-            .dark #hn-dark-logo{
-              color: #fff;
-            }
-            `}
-          </style>
-
-          <footer class="blog-footer-area css-4dfc6h">
-            <div class="blog-footer-credits css-z0tjgn">
-              <p class="css-2559wl">© 2021 Nazeeh's Blog</p>
-              <a
-                class="button-transparent small css-171wbv4"
-                href="https://hashnode.com/privacy?source=blog-footer"
-                target="_blank"
-                rel="noopener"
-              >
-                Privacy
-              </a>
-              <a
-                class="button-transparent small css-171wbv4"
-                href="https://hashnode.com/terms?source=blog-footer"
-                target="_blank"
-                rel="noopener"
-              >
-                Terms
-              </a>
-            </div>
-            <div class="css-1km1bze">
-              <span class="css-1v4n890">Proudly part of</span>
-              <a
-                aria-label="Hashnode"
-                href="https://hashnode.com?source=blog-footer"
-                target="_blank"
-                rel="noopener"
-              >
-                <svg class="css-1trayuc" viewBox="0 0 688 118" fill="none">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.95 38.655c-10.6 10.6-10.6 27.784 0 38.383l30.705 30.706c10.6 10.599 27.784 10.599 38.383 0l30.706-30.706c10.599-10.6 10.599-27.784 0-38.383L77.038 7.95c-10.6-10.599-27.784-10.599-38.383 0L7.95 38.655zm63.33 32.626c7.42-7.42 7.42-19.449 0-26.868-7.419-7.42-19.448-7.42-26.867 0-7.42 7.42-7.42 19.448 0 26.868 7.42 7.419 19.448 7.419 26.868 0z"
-                    fill="#2962FF"
-                  ></path>
-                  <path
-                    d="M161.437 78.362c.043-8.549 5.268-13.558 12.781-13.558 7.47 0 11.874 4.793 11.831 12.954v38.947h18.394V74.476c.043-15.544-9.111-24.957-22.928-24.957-10.06 0-16.796 4.75-19.819 12.565h-.777V28.276h-17.876v88.429h18.394V78.362zM232.967 117.957c9.801 0 16.148-4.275 19.387-10.449h.518v9.197h17.444V71.972c0-15.803-13.385-22.453-28.152-22.453-15.89 0-26.339 7.6-28.887 19.69l17.013 1.381c1.252-4.404 5.181-7.642 11.787-7.642 6.261 0 9.845 3.152 9.845 8.592v.26c0 4.274-4.534 4.835-16.062 5.958-13.127 1.209-24.914 5.613-24.914 20.423 0 13.126 9.369 19.776 22.021 19.776zm5.267-12.695c-5.656 0-9.715-2.633-9.715-7.685 0-5.182 4.275-7.73 10.752-8.636 4.015-.561 10.578-1.511 12.78-2.98V93c0 6.951-5.742 12.262-13.817 12.262zM334.904 69.295c-1.64-12.22-11.485-19.776-28.238-19.776-16.969 0-28.152 7.859-28.109 20.64-.043 9.93 6.218 16.364 19.171 18.955l11.485 2.288c5.786 1.166 8.42 3.282 8.506 6.606-.086 3.93-4.361 6.736-10.794 6.736-6.563 0-10.924-2.806-12.047-8.204l-18.091.95c1.727 12.695 12.521 20.51 30.095 20.51 17.185 0 29.49-8.765 29.534-21.848-.044-9.586-6.304-15.329-19.171-17.962l-12.004-2.418c-6.175-1.339-8.463-3.455-8.42-6.65-.043-3.972 4.448-6.563 10.147-6.563 6.39 0 10.19 3.498 11.097 7.772l16.839-1.036zM361.529 78.362c.043-8.549 5.267-13.558 12.78-13.558 7.47 0 11.874 4.793 11.831 12.954v38.947h18.394V74.476c.043-15.544-9.111-24.957-22.928-24.957-10.06 0-16.796 4.75-19.818 12.565h-.778V28.276h-17.875v88.429h18.394V78.362zM432.54 78.362c.043-8.549 5.138-13.558 12.565-13.558 7.383 0 11.831 4.836 11.787 12.954v38.947h18.394V74.476c0-15.457-9.067-24.957-22.884-24.957-9.845 0-16.969 4.836-19.948 12.565h-.778V50.383h-17.53v66.322h18.394V78.362zM514.885 118c20.122 0 32.643-13.774 32.643-34.197 0-20.553-12.521-34.284-32.643-34.284-20.121 0-32.642 13.731-32.642 34.284 0 20.423 12.521 34.197 32.642 34.197zm.087-14.249c-9.283 0-14.033-8.506-14.033-20.078s4.75-20.12 14.033-20.12c9.11 0 13.86 8.549 13.86 20.12 0 11.572-4.75 20.078-13.86 20.078zM579.064 117.784c10.708 0 16.278-6.174 18.826-11.701h.777v10.622h18.135v-88.43h-18.351v33.248h-.561c-2.462-5.397-7.773-12.004-18.869-12.004-14.551 0-26.857 11.313-26.857 34.111 0 22.194 11.788 34.154 26.9 34.154zm5.829-14.637c-9.024 0-13.947-8.032-13.947-19.603 0-11.486 4.836-19.387 13.947-19.387 8.938 0 13.947 7.556 13.947 19.387 0 11.83-5.096 19.603-13.947 19.603zM657.286 118c16.408 0 27.461-7.988 30.052-20.294l-17.012-1.122c-1.857 5.051-6.606 7.685-12.738 7.685-9.197 0-15.026-6.088-15.026-15.976v-.043h45.165v-5.052c0-22.539-13.645-33.679-31.175-33.679-19.517 0-32.168 13.86-32.168 34.327 0 21.028 12.479 34.154 32.902 34.154zm-14.724-41.149c.389-7.556 6.132-13.601 14.292-13.601 7.988 0 13.515 5.7 13.558 13.601h-27.85z"
-                    fill="fill-current"
-                    id="hn-dark-logo"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </footer> */
-}

@@ -105,11 +105,9 @@ const PlayGround = ({
   }, []);
 
   useEffect(() => {
-    let iframe = window.frames[0].document;
+    let style = window.frames[0].document.getElementById("style");
 
-    let style = document.createElement("style");
     style.innerHTML = CSSCode;
-    iframe.body.appendChild(style);
   }, [CSSCode]);
 
   let guides = [
