@@ -108,6 +108,7 @@ const PlayGround = ({
     let style = window.frames[0].document.getElementById("style");
 
     style.innerHTML = CSSCode;
+    console.log({ data });
   }, [CSSCode]);
 
   let guides = [

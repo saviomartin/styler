@@ -940,17 +940,9 @@ const homepage = ({ data }) => {
                 </div>
               </div>
             </header>
-            <div
-              className="blog-author-container css-akxj19"
-              style={{ backgroundColor: "" }}
-            >
+            <div className="blog-author-container css-akxj19">
               <div className="blog-author-area feed-width css-ap35cf">
-                <div
-                  className="blog-author-card css-31caih"
-                  itemProp="author"
-                  itemScope
-                  itemType="http://schema.org/Person"
-                >
+                <div className="blog-author-card css-31caih">
                   <div className="css-1i0unf">
                     <div className="css-5eoxrw">
                       <div className="css-15n66j1">
@@ -972,11 +964,7 @@ const homepage = ({ data }) => {
                       </div>
                     </div>
                     <div className="css-u5qy34">
-                      <a
-                        aria-label="Blog Author Picture"
-                        href="https://hashnode.com/@saviomartin"
-                        className="blog-author-area-photo css-r7yz1v"
-                      >
+                      <a className="blog-author-area-photo css-r7yz1v">
                         <div
                           style={{
                             display: "inline-block",
@@ -1004,15 +992,12 @@ const homepage = ({ data }) => {
                               }}
                               alt
                               aria-hidden="true"
-                              role="presentation"
                               src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                             />
                           </div>
                           <img
                             alt="Blog Author Picture"
-                            itemProp="image"
                             src="https://townhall.hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1615368428147%2FTMHA5E7Gq.jpeg%3Fw%3D400%26h%3D400%26fit%3Dcrop%26crop%3Dfaces%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=828&q=75"
-                            decoding="async"
                             className="css-1082qq3"
                             style={{
                               position: "absolute",
@@ -1032,23 +1017,9 @@ const homepage = ({ data }) => {
                               backgroundSize: "cover",
                               backgroundImage: "none",
                             }}
-                            srcSet="https://townhall.hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1615368428147%2FTMHA5E7Gq.jpeg%3Fw%3D400%26h%3D400%26fit%3Dcrop%26crop%3Dfaces%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=640&q=75 1x, https://townhall.hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1615368428147%2FTMHA5E7Gq.jpeg%3Fw%3D400%26h%3D400%26fit%3Dcrop%26crop%3Dfaces%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=828&q=75 2x"
                           />
                         </div>
                       </a>
-                      <meta itemProp="name" content="Savio Martin" />
-                      <meta
-                        itemProp="sameAs"
-                        content="https://twitter.com/saviomartin7"
-                      />
-                      <meta
-                        itemProp="sameAs"
-                        content="https://github.com/saviomartin"
-                      />
-                      <meta
-                        itemProp="sameAs"
-                        content="https://www.linkedin.com/in/saviomartin/"
-                      />
                     </div>
                   </div>
                 </div>
