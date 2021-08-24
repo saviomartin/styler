@@ -1,10 +1,14 @@
 import React from "react";
+
+// codemirror
 import { UnControlled as CodeMirror } from "react-codemirror2";
 
+// codemirror css
 import "codemirror/lib/codemirror.css";
 import "codemirror/theme/material-ocean.css";
 import "codemirror/addon/hint/show-hint.css";
 
+// codemirror plugins
 require("codemirror/mode/css/css");
 require("codemirror/addon/hint/css-hint");
 require("codemirror/addon/hint/show-hint");

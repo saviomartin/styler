@@ -4,8 +4,9 @@ import React from "react";
 import Modal from "@material-ui/core/Modal";
 import Backdrop from "@material-ui/core/Backdrop";
 import Fade from "@material-ui/core/Fade";
-import Btn from "./Btn";
-import { FiX } from "react-icons/fi";
+
+import Btn from "./Btn"; // components
+import { FiX } from "react-icons/fi"; // icons
 
 const ModalPopup = ({ open, setOpen, children }) => {
   return (

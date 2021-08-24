@@ -1,9 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
+
+// css generator from data
 import { generateCSS } from "../helper";
+
 // uuid
 import { v4 as uuidv4 } from "uuid";
+
+// components
 import Btn from "./Btn";
-import Link from "next/link";
 
 const Template = ({ item, src }) => {
   let randomClassName = `template-${uuidv4()}`;
