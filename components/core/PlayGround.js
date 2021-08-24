@@ -111,7 +111,9 @@ const PlayGround = ({
   useEffect(() => {
     let style = window.frames[0].document.getElementById("style"); // get style element with id from Iframe
 
-    style.innerHTML = CSSCode; // set inerHtml for style element
+    if (style) {
+      style.innerHTML = CSSCode; // set inerHtml for style element
+    }
   }, [CSSCode]);
 
   let guides = [
