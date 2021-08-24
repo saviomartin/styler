@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
+
+// icons
 import { FiThumbsUp, FiTwitter } from "react-icons/fi";
+
+// components
 import { AppHeader, AppFooter, AdvancedSettings, PopupWrapper, Btn } from "..";
 
 const PlayGround = ({
@@ -105,9 +109,9 @@ const PlayGround = ({
   }, []);
 
   useEffect(() => {
-    let style = window.frames[0].document.getElementById("style");
+    let style = window.frames[0].document.getElementById("style"); // get style element with id from Iframe
 
-    style.innerHTML = CSSCode;
+    style.innerHTML = CSSCode; // set inerHtml for style element
   }, [CSSCode]);
 
   let guides = [

@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Listbox } from "@headlessui/react";
-import Btn from "../utils/Btn";
-import { BsChevronExpand, BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
-import Switch from "@material-ui/core/Switch";
 
+// headless ui
+import { Listbox } from "@headlessui/react";
+
+// material design
+import Btn from "../utils/Btn";
+
+// icons
+import { BsChevronExpand, BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
+
+// break points array
 const media = [
   { id: 1, name: "Phone", icon: <BsPhone className="text-xl mr-1" /> },
   { id: 2, name: "Tablet", icon: <BsTablet className="text-xl mr-1" /> },

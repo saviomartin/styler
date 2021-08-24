@@ -1,9 +1,14 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+
+import axios from "axios"; // axios
+
+// icons
 import { BsArrowsAngleContract, BsArrowsAngleExpand } from "react-icons/bs";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import screenfull from "screenfull";
-import Btn from "../utils/Btn";
+
+import screenfull from "screenfull"; // screenfull for full screen
+
+import Btn from "../utils/Btn"; // material btn
 
 const AppFooter = () => {
   const [isFullScreen, setIsFullScreen] = useState(false);

@@ -1,6 +1,10 @@
 import React, { useState } from "react";
+
+// icons
 import { BsLaptop, BsPhone, BsTablet } from "react-icons/bs";
 import { FiX } from "react-icons/fi";
+
+// components
 import { Accordion, CodeBlock } from "..";
 import Btn from "../utils/Btn";
 

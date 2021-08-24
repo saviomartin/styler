@@ -1,5 +1,9 @@
 import React from "react";
+
+// icons
 import { FaTwitter } from "react-icons/fa";
+
+// components
 import { CodeBlock, Btn } from "..";
 
 const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {

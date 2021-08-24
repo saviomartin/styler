@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
+
+// Btns
 import { Btn, FancyBtn } from "..";
+
+// link from Next
 import Link from "next/link";
 
+// material-ui
 import { Menu, MenuList, MenuButton, MenuItem } from "@reach/menu-button";
 
+// icons
 import {
   BsArrowBarLeft,
   BsFillPersonPlusFill,
@@ -25,7 +31,7 @@ const AppHeader = ({ CSSCode, user, copied, setCopied }) => {
   });
 
   const copyCSSCode = () => {
-    navigator.clipboard.writeText(CSSCode);
+    navigator.clipboard.writeText(CSSCode); // copy to clipboard
     setCopied(!copied);
   };
 

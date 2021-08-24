@@ -1,5 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
+
+// icons
 import { FiChevronLeft } from "react-icons/fi";
+
+// components
 import { Btn, DefaultLeftSide, EditingLeftSide } from "..";
 
 const LeftSideBar = (props) => {
