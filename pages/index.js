@@ -121,12 +121,12 @@ export default function Home() {
           browers, grab the code and start using ⚡️ Wohoo, its that easy!
         </p>
         <div className="mt-5 flex">
-          <Link href="/app">
+          <a href="/app">
             <FancyBtn
               text="Start from Blank"
               icon={<FiArrowRight className="text-xl ml-2" />}
             />
-          </Link>
+          </a>
           <a
             className="ml-2"
             href="https://github.com/saviomartin/styler"
@@ -150,10 +150,11 @@ export default function Home() {
             Home <FiArrowRight className="ml-1 text-lg" />
           </h1>
           <div className="flex w-full mt-3 flex-wrap">
-            {templates.home.length > 0 &&
-              templates.home.map((item) => (
-                <Template item={item} src="/demo/home" />
-              ))}
+            {templates.home.length > 0
+              ? templates.home.map((item) => (
+                  <Template item={item} src="/demo/home" />
+                ))
+              : "Loading..."}
           </div>
         </div>
         <div className="w-full bg-[#f7f9fa] border border-[#eee] rounded-md my-2 mt-4 p-6">
@@ -161,10 +162,11 @@ export default function Home() {
             Article <FiArrowRight className="ml-1 text-lg" />
           </h1>
           <div className="flex w-full mt-3 flex-wrap">
-            {templates.article.length > 0 &&
-              templates.article.map((item) => (
-                <Template item={item} src="/demo/article" />
-              ))}
+            {templates.article.length > 0
+              ? templates.article.map((item) => (
+                  <Template item={item} src="/demo/article" />
+                ))
+              : "Loading..."}
           </div>
         </div>
       </div>

@@ -88,16 +88,19 @@ const AdvancedSettings = ({ dimensions, setDimensions }) => {
       <div className="relative flex h-full items-center justify-center border-l border-[#ddd] pl-2  pb-3">
         <div className="relative">
           <h3 className="text-xs text-[#444]">Dark Mode</h3>
-          <label for="toggleB" class="flex items-center cursor-pointer mt-1">
-            <div class="relative">
+          <label
+            for="toggleB"
+            className="flex items-center cursor-pointer mt-1"
+          >
+            <div className="relative">
               <input
                 type="checkbox"
                 id="toggleB"
-                class="sr-only"
+                className="sr-only"
                 onChange={() => setDarkMode(!darkMode)}
               />
-              <div class="block bg-[#eee] border border-[#ddd] w-10 h-6 rounded-full"></div>
-              <div class="dot absolute left-1 top-1 bg-[#aaa] w-4 h-4 rounded-full transition"></div>
+              <div className="block bg-[#eee] border border-[#ddd] w-10 h-6 rounded-full"></div>
+              <div className="dot absolute left-1 top-1 bg-[#aaa] w-4 h-4 rounded-full transition"></div>
             </div>
           </label>
         </div>
