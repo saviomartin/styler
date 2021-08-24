@@ -18,7 +18,9 @@ const Template = ({ item, src }) => {
       .querySelector(`.${randomClassName}`)
       .contentWindow.document.getElementById("style");
 
-    style.innerHTML = CSSCode;
+    if (style) {
+      style.innerHTML = CSSCode; // set inerHtml for style element
+    }
   };
 
   return (
