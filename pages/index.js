@@ -157,8 +157,8 @@ export default function Home() {
           </h1>
           <div className="flex w-full mt-3 flex-wrap">
             {templates.home.length > 0
-              ? templates.home.map((item, key) => (
-                  <Template item={item} key={key} src="/demo/home" />
+              ? templates.home.map((item) => (
+                  <Template item={item} src="/demo/home" />
                 ))
               : "Loading..."}
           </div>
@@ -169,8 +169,8 @@ export default function Home() {
           </h1>
           <div className="flex w-full mt-3 flex-wrap">
             {templates.article.length > 0
-              ? templates.article.map((item, key) => (
-                  <Template item={item} key={key} src="/demo/article" />
+              ? templates.article.map((item) => (
+                  <Template item={item} src="/demo/article" />
                 ))
               : "Loading..."}
           </div>

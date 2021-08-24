@@ -18,9 +18,7 @@ const Template = ({ item, src }) => {
       .querySelector(`.${randomClassName}`)
       .contentWindow.document.getElementById("style");
 
-    if (style) {
-      style.innerHTML = CSSCode; // set inerHtml for style element
-    }
+    style.innerHTML = CSSCode;
   };
 
   return (
@@ -42,7 +40,7 @@ const Template = ({ item, src }) => {
             <iframe
               src={src}
               id="iframe"
-              frameBorder="0"
+              frameborder="0"
               className={`absolute top-0 left-0 origin-top-left select-none ${randomClassName}`}
               style={{
                 height: "768px",

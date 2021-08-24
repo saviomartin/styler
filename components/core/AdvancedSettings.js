@@ -68,14 +68,13 @@ const AdvancedSettings = ({ dimensions, setDimensions }) => {
             </Listbox.Button>
             <Listbox.Options>
               {media.map(
-                (item, key) =>
+                (item) =>
                   selectedMedia.id !== item.id && (
                     <>
                       <div className="w-full bg-[#ddd] h-[1px] my-1"></div>
                       <Listbox.Option
                         key={item.id}
                         value={item}
-                        key={key}
                         disabled={item.unavailable}
                       >
                         <Btn className="!w-full">
