@@ -23,13 +23,15 @@ const app = (props) => {
   useEffect(async () => {
     let id = queryString.parse(window.location.search).edit;
 
-    let { data, error } = await supabase
-      .from("home")
-      .select("*")
-      .eq("id", id)
-      .single();
+    if (id) {
+      let { data, error } = await supabase
+        .from("home")
+        .select("*")
+        .eq("id", id)
+        .single();
 
-    props.setData(data.data);
+      props.setData(data.data);
+    }
   }, []);
 
   return (
