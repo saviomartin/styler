@@ -85,9 +85,13 @@ npm install
 4. Create `.env` file in root and add your variables
 
 ```bash
-NEXT_PUBLIC_UNSPLASH_CLIENT_ID=UNSPLASH_CLIENT_ID
-NEXT_PUBLIC_IMGBB_STORAGE_KEY=IMGBB_STORAGE_ACESS_KEY
-NEXT_PUBLIC_CLERK_FRONTEND_API=CLERK_FRONTEND_API
+AUTH0_SECRET= YOUR_AUTH0_SECRET
+AUTH0_BASE_URL= YOUR_AUTH0_BASE_URL
+AUTH0_ISSUER_BASE_URL= YOUR_AUTH0_ISSUER_BASE_URL
+AUTH0_CLIENT_ID= YOUR_AUTH0_CLIENT_ID
+AUTH0_CLIENT_SECRET= YOUR_AUTH0_CLIENT_SECRET
+NEXT_PUBLIC_SUPABASE_URL= YOUR_SUPABASE_URL
+NEXT_PUBLIC_SUPABASE_ANON_KEY= YOUR_SUPABASE_ANON_KEY
 ```
 
 5. Run the app
@@ -107,27 +111,25 @@ You are all set! Open [localhost:3000](http://localhost:3000/) to see the app.
 ## 💻 Built with
 
 - [Next JS](https://nextjs.org/)
-- [Clerk](https://clerk.dev/): Complete User Authentication
-- [react-color](https://casesandberg.github.io/react-color/): for color pickers
-- [html2canvas](https://html2canvas.hertzen.com/): for export as PNG, JPG, SVG
-- [react-rnd](https://github.com/bokuweb/react-rnd): for draggable and resizable components
+- [Auth0](https://auth0.com/): Complete User Authentication
 - [react-icons](https://react-icons.github.io/react-icons/): for icons
-- [nprogress](https://www.npmjs.com/package/nprogress): for slim progressbars
-- [react-hot-toast](https://react-hot-toast.com/): for toasts
+- [supabase](https://supabase.io/): for database
+- [headless-ui](https://headlessui.dev/): for components
+- [codemirror](https://codemirror.net/): for code blocks
+- [query-string](https://github.com/sindresorhus/query-string): for parsing query
 - [Material UI](http://material-ui.com/): for components
 - [Vercel](http://vercel.com/): for hosting
 
 ## 🌈 What's next
 
-styler is a special project made to empower the amazing hashnode community in the hop to see great articles with beautiful covers. Here are some of my plans ahead for styler 🤞
+Here is the roadmap of the future of Styler 🤞
 
-- `Ctrl+C` and `Ctrl+V` for components
-- history of created covers **(in progress)**
-- Export as GIF **(in progress)**
-- Collaborate with patner
-- Templates
+- history of prevois codes
+- Share preview URLs
+- Live Collaborate with patner
+- More Templates
 - Better Position Tracker
-- Rotatable, Scalable, Groupable Components
+- Change the default preview page with users own page
 
 ## 🛡️ License
 
@@ -166,5 +168,5 @@ If you found the app helpful, consider supporting me with a coffee.
 ---
 
 <h3 align="center">
-styler needs a ⭐️ from you
+Styler needs a ⭐️ from you
 </h3>
