@@ -111,7 +111,7 @@ const PlayGround = ({
   useEffect(() => {
     let style = window.frames[0].document.getElementById("style"); // get style element with id from Iframe
 
-    if(style){
+    if (style) {
       style.innerHTML = CSSCode; // set inerHtml for style element
     }
   }, [CSSCode]);
@@ -149,7 +149,7 @@ const PlayGround = ({
           <iframe
             src={iframeSrc ? iframeSrc : "/demo/home"}
             id="iframe"
-            frameborder="0"
+            frameBorder="0"
             className="relative select-none shadow-xl overflow-scroll"
             style={{ height: dimensions.height, width: dimensions.width }}
           ></iframe>
@@ -167,7 +167,7 @@ const PlayGround = ({
             </p>
             <div className="mt-4">
               {guides.map((item, index) => (
-                <div className="flex items-center my-1">
+                <div className="flex items-center my-1" index={index}>
                   <div className="h-[24px] w-[24px] rounded-full gradient mr-2 text-sm flex items-center justify-center font-bold text-white Inter">
                     {index + 1}
                   </div>

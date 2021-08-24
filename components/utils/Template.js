@@ -42,7 +42,7 @@ const Template = ({ item, src }) => {
             <iframe
               src={src}
               id="iframe"
-              frameborder="0"
+              frameBorder="0"
               className={`absolute top-0 left-0 origin-top-left select-none ${randomClassName}`}
               style={{
                 height: "768px",
