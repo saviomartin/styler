@@ -11,7 +11,7 @@ const AppFooter = () => {
 
   const fetchStarCount = () => {
     axios
-      .get("https://api.github.com/repos/saviomartin/slickr", {
+      .get("https://api.github.com/repos/saviomartin/styler", {
         headers: {},
       })
       .then((response) => {
