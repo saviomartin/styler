@@ -2,6 +2,7 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
 @import url(https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900);
 @import url(./Tooltip.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.css);
 
 * {
   margin: 0;
@@ -75,4 +76,9 @@
 
 .iframe-component {
   transform: scale(0.25);
+}
+
+/* Nprogress */
+#nprogress .bar {
+  background: linear-gradient(to left, #2c3c96, #564bb3, #ae64db);
 }

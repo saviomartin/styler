@@ -16,6 +16,7 @@
     "axios": "^0.21.1",
     "codemirror": "^5.62.2",
     "next": "latest",
+    "nprogress": "^0.2.0",
     "query-string": "^7.0.1",
     "react": "^17.0.2",
     "react-ace": "^8.0.0",

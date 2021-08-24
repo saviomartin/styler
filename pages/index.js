@@ -97,13 +97,14 @@ export default function Home() {
         </header>
       </div>
       <div className="gradient-left w-10/12 rounded-md p-6 mt-4 shadow-lg">
-        <h1 className="font-bold text-[2.7em] text-[#fff] w-[70%] leading-[1.25em]">
-          The Next-Generation CSS Builder
+        <h1 className="font-bold text-[1.5em] lg:text-[2.7em] text-[#fff] w-full lg:w-[70%] leading-[1.25em]">
+          The Next-Generation CSS Builder{" "}
+          <span className="block lg:hidden">in the web for your</span>
           <div className="flex items-center">
-            in the web for your
+            <span className="hidden lg:block">in the web for your</span>
             <a
               href="https://hashnode.com/"
-              className="text-[#3068FA] bg-app-graient-to-l relative ml-3"
+              className="text-[#3068FA] bg-app-graient-to-l relative lg:ml-3"
             >
               hashnode blog
               <div className="absolute bottom-1 left-0 bg-app-graient-to-l h-[3px] w-full"></div>
@@ -115,7 +116,7 @@ export default function Home() {
             />
           </div>
         </h1>
-        <p className="text-[#eee] mt-4 text-xs lg:text-base xl:text-base w-[60%]">
+        <p className="text-[#eee] mt-4 text-xs lg:text-base xl:text-base w-9/12 lg:w-[60%]">
           Super Charge your hashnode blog with styler. Write your style in the
           browers, grab the code and start using ⚡️ Wohoo, its that easy!
         </p>
@@ -139,16 +140,16 @@ export default function Home() {
         </div>
       </div>
       <div className="bg-[#fff] shadow-lg w-10/12 border border-[#ddd] rounded-md my-4 p-6">
-        <h1 className="font-bold text-3xl text-[#333]">Templates</h1>
-        <p className="text-sm text-[#777] mt-2">
+        <h1 className="font-bold text-xl lg:text-3xl text-[#333]">Templates</h1>
+        <p className="text-xs lg:text-sm text-[#777] mt-2">
           Start from a scratch or choose a template. Just click on the template
           to choose.
         </p>
         <div className="w-full bg-[#f7f9fa] border border-[#eee] rounded-md my-2 mt-4 p-6">
-          <h1 className="font-bold text-xl text-[#333] flex items-center">
+          <h1 className="font-bold text-lg lg:text-xl text-[#333] flex items-center">
             Home <FiArrowRight className="ml-1 text-lg" />
           </h1>
-          <div className="flex w-full mt-3">
+          <div className="flex w-full mt-3 flex-wrap">
             {templates.home.length > 0 &&
               templates.home.map((item) => (
                 <Template item={item} src="/demo/home" />
@@ -156,10 +157,10 @@ export default function Home() {
           </div>
         </div>
         <div className="w-full bg-[#f7f9fa] border border-[#eee] rounded-md my-2 mt-4 p-6">
-          <h1 className="font-bold text-xl text-[#333] flex items-center">
+          <h1 className="font-bold text-lg lg:text-xl text-[#333] flex items-center">
             Article <FiArrowRight className="ml-1 text-lg" />
           </h1>
-          <div className="flex w-full mt-3">
+          <div className="flex w-full mt-3 flex-wrap">
             {templates.article.length > 0 &&
               templates.article.map((item) => (
                 <Template item={item} src="/demo/article" />
