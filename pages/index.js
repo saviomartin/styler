@@ -1,33 +1,39 @@
-import { useUser } from "@auth0/nextjs-auth0";
+import { useEffect, useState } from "react";
+
+import { useUser } from "@auth0/nextjs-auth0"; // auth0
+
+// components
 import { Btn, FancyBtn, Template } from "../components";
+
+// Link from next
 import Link from "next/link";
 
-import {
-  BsArrowBarLeft,
-  BsFillPersonPlusFill,
-  BsHouse,
-  BsWindow,
-} from "react-icons/bs";
-
-import { Menu, MenuList, MenuButton, MenuItem } from "@reach/menu-button";
+// icons
+import { BsFillPersonPlusFill } from "react-icons/bs";
 import { FiArrowRight, FiGithub, FiLogOut } from "react-icons/fi";
-import { useEffect, useState } from "react";
+
+// material-ui
+import { Menu, MenuList, MenuButton, MenuItem } from "@reach/menu-button";
+
+// supabase
 import { supabase } from "../components/supabaseClient";
 
 export default function Home() {
-  const { user, error, isLoading } = useUser();
+  const { user, error, isLoading } = useUser(); // getting user information
 
   const [templates, setTemplates] = useState({
     home: [],
     article: [],
   });
 
+  // fetching templates of category: home
   const fetchHomeTemplates = async () => {
     let { data, error } = await supabase.from("home").select("*");
 
     return data;
   };
 
+  // fetching templates of category: article
   const fetchArticleTemplates = async () => {
     let { data, error } = await supabase.from("article").select("*");
 

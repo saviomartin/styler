@@ -1,13 +1,21 @@
 import React, { useEffect, useState } from "react";
+
+// components
 import { LeftSideBar, PlayGround } from "../../components";
+
+// query functions of URL with queryString.parse
 import queryString from "query-string";
-// pages/index.js
+
+// auth0
 import { useUser } from "@auth0/nextjs-auth0";
+
+// supabase
 import { supabase } from "../../components/supabaseClient";
 
 const article = (props) => {
   const [showLeftBar, setShowLeftBar] = useState(true);
-  const { user, error, isLoading } = useUser();
+  const { user, error, isLoading } = useUser(); // getting users from auth0 server
+
   let iframeSrc = "/demo/article";
 
   const appProps = {
@@ -32,7 +40,9 @@ const article = (props) => {
         .eq("id", id)
         .single();
 
-      props.setData(data.data);
+      // getting single row with id
+
+      props.setData(data.data); // using templates
     }
   }, []);
 

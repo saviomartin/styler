@@ -1,13 +1,20 @@
 import React, { useEffect, useState } from "react";
+
+// components
 import { LeftSideBar, PlayGround } from "../../components";
-// pages/index.js
+
+// auth0
 import { useUser } from "@auth0/nextjs-auth0";
+
+// query functions of URL with queryString.parse
 import queryString from "query-string";
+
+// supabase
 import { supabase } from "../../components/supabaseClient";
 
 const app = (props) => {
   const [showLeftBar, setShowLeftBar] = useState(true);
-  const { user, error, isLoading } = useUser();
+  const { user, error, isLoading } = useUser(); // getting users from auth0 server
 
   const appProps = {
     showLeftBar,
@@ -30,7 +37,9 @@ const app = (props) => {
         .eq("id", id)
         .single();
 
-      props.setData(data.data);
+      // getting single row with id
+
+      props.setData(data.data); // using templates
     }
   }, []);
 
