@@ -13,12 +13,6 @@ import { generateCSS } from "../components/helper";
 // auth0 wrapper
 import { UserProvider } from "@auth0/nextjs-auth0";
 
-// Router from next
-import Router from "next/router";
-
-// showing progress using nprogress
-import NProgress from "nprogress";
-
 function MyApp({ Component, pageProps }) {
   const [data, setData] = useState(mockData);
   const [basicStyles, setBasicStyles] = useState(
@@ -41,17 +35,6 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     setCSSCode(generateCSS(data, basicStyles));
   }, [data, basicStyles]);
-
-  // config nprogress
-  NProgress.configure({ showSpinner: false });
-
-  // showing loading and progress
-  Router.events.on("routeChangeStart", (url) => {
-    NProgress.start();
-  });
-  Router.events.on("routeChangeComplete", (url) => {
-    NProgress.done();
-  });
 
   return (
     <UserProvider>
