@@ -39,10 +39,10 @@ Styler is the next gen custom CSS builder developed to supercharge your hashnode
 ## 🚀 Demo
 
 <a href="https://styler.vercel.app/" target="blank">
-<img src="public/assets/styler-cover.png" />
+<img src="public/assets/banner.png" />
 </a>
 
-Try the App: [styler](https://styler.vercel.app/)
+Try the App: [styler.vercel.app](https://styler.vercel.app/)
 
 ## 🧐 Features
 
