@@ -66,6 +66,7 @@ const PlayGround = ({
 
       if (element) {
         element.onclick = (e) => {
+          console.log(e);
           let path0 = e.path[0].className;
           let path1 = e.path[1].className;
           let path2 = e.path[2].className;
