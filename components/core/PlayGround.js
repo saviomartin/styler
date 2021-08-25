@@ -59,7 +59,7 @@ const PlayGround = ({
   };
 
   useEffect(() => {
-    let iframe = window.frames[0].document;
+    let iframe = document.getElementById("iframe").contentWindow.document;
 
     data.forEach((item) => {
       let element = iframe.querySelector(`.${item.name}`);
@@ -109,7 +109,9 @@ const PlayGround = ({
   }, []);
 
   useEffect(() => {
-    let style = window.frames[0].document.getElementById("style"); // get style element with id from Iframe
+    let style = document
+      .getElementById("iframe")
+      .contentWindow.document.getElementById("style"); // get style element with id from Iframe
 
     if (style) {
       style.innerHTML = CSSCode; // set inerHtml for style element
