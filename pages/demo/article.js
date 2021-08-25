@@ -1178,8 +1178,8 @@ const article = ({ data }) => {
                     </svg>
                   </a>
                   <a
-                    href="/rss.xml"
-                    aria-label="Blog's XML Feed"
+                    href="/rss."
+                    aria-label="Blog's  Feed"
                     className="css-eqcmow"
                   >
                     <svg className="css-1330i9l" viewBox="0 0 448 512">
@@ -1226,7 +1226,7 @@ const article = ({ data }) => {
                           alt
                           aria-hidden="true"
                           role="presentation"
-                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI4NDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iMTYwMCIgaGVpZ2h0PSI4NDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                         />
                       </div>
                       <img
@@ -1308,7 +1308,7 @@ const article = ({ data }) => {
                                     alt
                                     aria-hidden="true"
                                     role="presentation"
-                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                                    src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                                   />
                                 </div>
                                 <img
@@ -1615,7 +1615,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -1686,7 +1686,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -1757,7 +1757,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -1828,7 +1828,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -1899,7 +1899,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -1970,7 +1970,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -2041,7 +2041,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -2112,7 +2112,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -2183,7 +2183,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -2254,7 +2254,7 @@ const article = ({ data }) => {
                                           alt
                                           aria-hidden="true"
                                           role="presentation"
-                                          src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
+                                          src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmVyc2lvbj0iMS4xIi8+"
                                         />
                                       </div>
                                       <img
@@ -2739,7 +2739,7 @@ code * {
                                     alt
                                     aria-hidden="true"
                                     role="presentation"
-                                    src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
+                                    src="data:image/svg+;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                                     style={{
                                       maxWidth: "100%",
                                       display: "block",

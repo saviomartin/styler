@@ -928,8 +928,8 @@ const homepage = ({ data }) => {
                       </svg>
                     </a>
                     <a
-                      href="/rss.xml"
-                      aria-label="Blog's XML Feed"
+                      href="/rss."
+                      aria-label="Blog's  Feed"
                       className="css-eqcmow"
                     >
                       <svg className="css-1330i9l" viewBox="0 0 448 512">
@@ -991,8 +991,6 @@ const homepage = ({ data }) => {
                                 padding: 0,
                               }}
                               alt
-                              aria-hidden="true"
-                              src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2ZXJzaW9uPSIxLjEiLz4="
                             />
                           </div>
                           <img
