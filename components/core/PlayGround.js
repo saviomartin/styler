@@ -59,56 +59,6 @@ const PlayGround = ({
   };
 
   useEffect(() => {
-    let iframe = document.getElementById("iframe").contentWindow.document;
-
-    data.forEach((item) => {
-      let element = iframe.querySelector(`.${item.name}`);
-
-      if (element) {
-        element.onclick = (e) => {
-          let path0 = e.path[0].className;
-          let path1 = e.path[1].className;
-          let path2 = e.path[2].className;
-          let path3 = e.path[3].className;
-          let path4 = e.path[4].className;
-
-          let finalElement;
-
-          let checkIsStartingWith = (text) => {
-            if (text && text !== undefined && text.length > 0) {
-              return text.startsWith("blog-");
-            }
-          };
-
-          if (path0 && checkIsStartingWith(path0)) {
-            finalElement = path0;
-          } else if (path1 && checkIsStartingWith(path1)) {
-            finalElement = path1;
-          } else if (path2 && checkIsStartingWith(path2)) {
-            finalElement = path2;
-          } else if (path3 && checkIsStartingWith(path3)) {
-            finalElement = path3;
-          } else if (path4 && checkIsStartingWith(path4)) {
-            finalElement = path4;
-          }
-
-          if (
-            finalElement &&
-            finalElement !== undefined &&
-            finalElement.length > 0
-          ) {
-            setChosenElement(
-              data.filter(
-                (item) => item.name === finalElement.replace(/ .*/, "")
-              )[0].name
-            );
-          }
-        };
-      }
-    });
-  }, []);
-
-  useEffect(() => {
     let style = document
       .getElementById("iframe")
       .contentWindow.document.getElementById("style"); // get style element with id from Iframe
@@ -117,6 +67,49 @@ const PlayGround = ({
       style.innerHTML = CSSCode; // set inerHtml for style element
     }
   }, [CSSCode]);
+
+  useEffect(() => {
+    document.getElementById("iframe").contentWindow.document.body.onclick =
+      function (e) {
+        let path0 = e.path[0].className;
+        let path1 = e.path[1].className;
+        let path2 = e.path[2].className;
+        let path3 = e.path[3].className;
+        let path4 = e.path[4].className;
+
+        let finalElement;
+
+        let checkIsStartingWith = (text) => {
+          if (text && text !== undefined && text.length > 0) {
+            return text.startsWith("blog-");
+          }
+        };
+
+        if (path0 && checkIsStartingWith(path0)) {
+          finalElement = path0;
+        } else if (path1 && checkIsStartingWith(path1)) {
+          finalElement = path1;
+        } else if (path2 && checkIsStartingWith(path2)) {
+          finalElement = path2;
+        } else if (path3 && checkIsStartingWith(path3)) {
+          finalElement = path3;
+        } else if (path4 && checkIsStartingWith(path4)) {
+          finalElement = path4;
+        }
+
+        if (
+          finalElement &&
+          finalElement !== undefined &&
+          finalElement.length > 0
+        ) {
+          setChosenElement(
+            data.filter(
+              (item) => item.name === finalElement.replace(/ .*/, "")
+            )[0].name
+          );
+        }
+      };
+  });
 
   let guides = [
     {
