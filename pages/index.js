@@ -74,30 +74,26 @@ export default function Home() {
                 </MenuButton>
                 <MenuList className="bg-white mt-1 p-1 rounded-md shadow z-[20] relative border border-[#ddd]">
                   <MenuItem>
-                    <Link href="/api/auth/logout">
-                      <a>
-                        <Btn className="!rounded-md">
-                          <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow">
-                            <FiLogOut className="text-xl mr-2" />
-                            Logout
-                          </div>
-                        </Btn>
-                      </a>
-                    </Link>
+                    <a href="/api/auth/logout">
+                      <Btn className="!rounded-md">
+                        <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow">
+                          <FiLogOut className="text-xl mr-2" />
+                          Logout
+                        </div>
+                      </Btn>
+                    </a>
                   </MenuItem>
                 </MenuList>
               </Menu>
             ) : (
-              <Link href="/api/auth/login">
-                <a>
-                  <Btn className="!rounded-md !ml-[5px]">
-                    <div className="border-2 border-[#a770ef] text-[#a770ef] py-[6px] px-3 rounded-md flex items-center justify-center shadow capitalize">
-                      <BsFillPersonPlusFill className="text-xl mr-2" />
-                      Sign In
-                    </div>
-                  </Btn>
-                </a>
-              </Link>
+              <a href="/api/auth/login">
+                <Btn className="!rounded-md !ml-[5px]">
+                  <div className="border-2 border-[#a770ef] text-[#a770ef] py-[6px] px-3 rounded-md flex items-center justify-center shadow capitalize">
+                    <BsFillPersonPlusFill className="text-xl mr-2" />
+                    Sign In
+                  </div>
+                </Btn>
+              </a>
             )}
           </div>
         </header>
