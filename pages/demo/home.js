@@ -990,12 +990,13 @@ const homepage = ({ data }) => {
                                 border: "none",
                                 padding: 0,
                               }}
-                              alt
+                              src="https://avatars.githubusercontent.com/saviomartin"
+                              alt=""
                             />
                           </div>
                           <img
                             alt="Blog Author Picture"
-                            src="https://townhall.hashnode.com/_next/image?url=https%3A%2F%2Fcdn.hashnode.com%2Fres%2Fhashnode%2Fimage%2Fupload%2Fv1615368428147%2FTMHA5E7Gq.jpeg%3Fw%3D400%26h%3D400%26fit%3Dcrop%26crop%3Dfaces%26auto%3Dcompress%2Cformat%26format%3Dwebp&w=828&q=75"
+                            src="https://avatars.githubusercontent.com/saviomartin"
                             className="css-1082qq3"
                             style={{
                               position: "absolute",
