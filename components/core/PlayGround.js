@@ -50,7 +50,7 @@ const PlayGround = ({
   useEffect(() => {
     let iframe = document.getElementById("iframe").contentWindow.document;
 
-    if (iframe && iframe !== null) {
+    if (document.getElementById("iframe") !== null && iframe !== null) {
       resizeCoverImage();
 
       window.addEventListener("resize", resizeCoverImage);
@@ -77,7 +77,7 @@ const PlayGround = ({
   useEffect(() => {
     let iframe = document.getElementById("iframe").contentWindow.document;
 
-    if (iframe && iframe !== null) {
+    if (document.getElementById("iframe") !== null && iframe !== null) {
       iframe.body.onclick = function (e) {
         let path0 = e.path[0].className;
         let path1 = e.path[1].className;
