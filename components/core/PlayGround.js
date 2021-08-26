@@ -48,9 +48,15 @@ const PlayGround = ({
 
   // useEffect to control window resize and all
   useEffect(() => {
-    resizeCoverImage();
+    let iframe = document.getElementById("iframe").contentWindow.document;
 
-    window.addEventListener("resize", resizeCoverImage);
+    if (iframe && iframe !== null) {
+      resizeCoverImage();
+
+      window.addEventListener("resize", resizeCoverImage);
+    } else {
+      console.log("iframe is null");
+    }
   });
 
   const props = {
@@ -71,7 +77,7 @@ const PlayGround = ({
   useEffect(() => {
     let iframe = document.getElementById("iframe").contentWindow.document;
 
-    if (iframe) {
+    if (iframe && iframe !== null) {
       iframe.body.onclick = function (e) {
         let path0 = e.path[0].className;
         let path1 = e.path[1].className;
@@ -111,6 +117,8 @@ const PlayGround = ({
           );
         }
       };
+    } else {
+      console.log("No Iframe");
     }
   });
 
