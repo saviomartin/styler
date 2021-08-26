@@ -19,6 +19,7 @@ const PlayGround = ({
     width: "1366px",
     height: "768px",
   });
+  const [loaded, setLoaded] = useState(false);
 
   // resize cover image to fit the view
   const resizeCoverImage = () => {
@@ -50,7 +51,11 @@ const PlayGround = ({
   useEffect(() => {
     let iframe = document.getElementById("iframe").contentWindow.document;
 
-    if (document.getElementById("iframe") !== null && iframe !== null) {
+    if (
+      loaded &&
+      document.getElementById("iframe") !== null &&
+      iframe !== null
+    ) {
       resizeCoverImage();
 
       window.addEventListener("resize", resizeCoverImage);
@@ -77,7 +82,11 @@ const PlayGround = ({
   useEffect(() => {
     let iframe = document.getElementById("iframe").contentWindow.document;
 
-    if (document.getElementById("iframe") !== null && iframe !== null) {
+    if (
+      loaded &&
+      document.getElementById("iframe") !== null &&
+      iframe !== null
+    ) {
       iframe.body.onclick = function (e) {
         let path0 = e.path[0].className;
         let path1 = e.path[1].className;
@@ -155,6 +164,7 @@ const PlayGround = ({
           <iframe
             src={iframeSrc ? iframeSrc : "/demo/home"}
             id="iframe"
+            onLoad={() => setLoaded(true)}
             frameborder="0"
             className="relative select-none shadow-xl overflow-scroll"
             style={{ height: dimensions.height, width: dimensions.width }}
