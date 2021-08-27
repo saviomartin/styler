@@ -14,7 +14,7 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
         <div className="flex items-center">
           <div className="h-2 w-2 rounded-full gradient mr-2"></div>
           <a
-            href="#"
+            href="https://support.hashnode.com/docs/standard-classes/"
             target="_blank"
             rel="noreferrer"
             className="continuous-1 text-base"
@@ -25,7 +25,7 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
         <div className="flex items-center">
           <div className="h-2 w-2 rounded-full gradient mr-2"></div>
           <a
-            href="#"
+            href="https://saviomartin.com/styler#tldr"
             target="_blank"
             rel="noreferrer"
             className="continuous-1 text-base"
@@ -36,7 +36,7 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
         <div className="flex items-center">
           <div className="h-2 w-2 rounded-full gradient mr-2"></div>
           <a
-            href="#"
+            href="https://hashnode.com/post/style-your-hashnode-blog-with-custom-css-ckfwpesyg00ut0es10jgk5uwl"
             target="_blank"
             rel="noreferrer"
             className="continuous-1 text-base"
@@ -47,7 +47,7 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
         <div className="flex items-center">
           <div className="h-2 w-2 rounded-full gradient mr-2"></div>
           <a
-            href="#"
+            href="https://www.buymeacoffee.com/saviomartin"
             target="_blank"
             rel="noreferrer"
             className="continuous-1 text-base"
@@ -59,7 +59,7 @@ const DefaultLeftSide = ({ basicStyles, setBasicStyles }) => {
         <div className="flex items-center">
           <div className="h-2 w-2 rounded-full gradient mr-2"></div>
           <a
-            href="#"
+            href="https://github.com/saviomartin/styler"
             target="_blank"
             rel="noreferrer"
             className="continuous-1 text-base"
