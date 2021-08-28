@@ -52,25 +52,29 @@ const AppHeader = ({ CSSCode, user, copied, setCopied }) => {
         </MenuButton>
         <MenuList className="bg-white p-2 mt-1 rounded-md shadow z-[20] relative border border-[#ddd]">
           <MenuItem>
-            <a href={isHomeURL ? "/app/article/" : ""}>
-              <Btn className="!rounded-md">
-                <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow">
-                  <BsWindow className="text-xl mr-2" />
-                  Article
-                </div>
-              </Btn>
-            </a>
+            <Link href={isHomeURL ? "/app/article/" : ""}>
+              <a>
+                <Btn className="!rounded-md">
+                  <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow">
+                    <BsWindow className="text-xl mr-2" />
+                    Article
+                  </div>
+                </Btn>
+              </a>
+            </Link>
           </MenuItem>
           <div className="w-full bg-[#ddd] h-[1px] my-1"></div>
           <MenuItem>
-            <a href={!isHomeURL ? "/app/" : ""}>
-              <Btn className="!rounded-md">
-                <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow">
-                  <BsHouse className="text-xl mr-2" />
-                  Home
-                </div>
-              </Btn>
-            </a>
+            <Link href={!isHomeURL ? "/app/" : ""}>
+              <a>
+                <Btn className="!rounded-md">
+                  <div className="glassmorphism py-2 px-3 rounded-md flex items-center justify-center shadow">
+                    <BsHouse className="text-xl mr-2" />
+                    Home
+                  </div>
+                </Btn>
+              </a>
+            </Link>
           </MenuItem>
         </MenuList>
       </Menu>
