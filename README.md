@@ -1,4 +1,4 @@
-<h1 align="center">Syler 🎨</h1>
+<h1 align="center">Styler 🎨</h1>
 
 <p align="center">
 <a href="https://github.com/saviomartin/styler/blob/master/LICENSE" target="blank">
